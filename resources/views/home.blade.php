@@ -1,44 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Rat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <link rel="stylesheet" href="{{ asset('assets/CSS/style.css') }}">
-</head>
-<body>
-    <div class="profile-card">
-        <div class="profile-picture">
-            <img src="c33d83d9618e4c82a17d7a14278f6316.jpg" alt="Profile Picture">
+  </head>
+
+  <body>
+    <!-- start navigation bar -->
+    <nav class="navbar">
+      <a href="#" class="logo-navbar">Gym<span>Rat</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#tools">Alat Gym</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- end navigation bar -->
+
+    <!-- hero sect start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Bigger Will <span>Bigger Muscle</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          voluptatum?
+        </p>
+        <a href="#" class="cta">Join Now!</a>
+      </main>
+    </section>
+
+    <!-- hero sect end -->
+
+    <!-- about sect start -->
+    <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+
+        <div class="row">
+            <div class="about-img">
+                <img src="img/tentang-kami.jpg" alt="Tentang Kami">
         </div>
-        <div class="profile-content">
-            <h1><span class="typing-animation">My Profile</span></h1>
-            <p>Hai! Nama saya JORDI ABRAR SATRIA. Saya adalah mahasiswa Teknik Informatika dengan minat besar pada pengembangan perangkat lunak dan kecerdasan buatan. Saat ini, saya sedang mendalami pemrograman dengan bahasa seperti Python, Java, dan C++, serta membangun proyek-proyek menggunakan framework seperti React dan Django. Saya juga tertarik pada bidang data science, machine learning, dan pengembangan aplikasi mobile. Saya percaya bahwa teknologi dapat menjadi solusi untuk berbagai tantangan global, dan saya bercita-cita untuk berkontribusi dalam inovasi teknologi di masa depan.</p>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-            <div>
-                <h2>Socials</h2>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
+        <div class="content">
+            <h3>YOU Should Be A GymRat!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor inventore rem sequi suscipit exercitationem quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ad tenetur nemo at aliquid autem porro voluptatum quaerat odio quisquam?</p>
         </div>
-    </div>
-        <div class="gallery-container">
-            <h1>Gallery</h1>
+        
+    </section>
+
+    <!-- about sect end -->
+
+    <!-- alat gym sect start -->
+    <section id="tools" class="tools">
+      <h2><span>Alat</span> Gym</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptates nisi cupiditate assumenda unde eum laborum quasi. Suscipit, harum earum.</p>
+    
+    
+      <div class="row">
+        <div class="gym-card">
+          <img src="img/BARBEL.jpg" alt="Barbel">
+          <h3 class="gym-card-title">
+            Barbel
+          </h3>
         </div>
-        <div class="gallery-grid">
-            <img src="c2fa17ead20c29a60d07220df8d0cd09.jpg" alt="Image 1">
-            <img src="33d95ee7324687c137bbe39ada23d106.jpg" alt="Image 2">
-            <img src="590a0a6bd6ca955ed8afca24dc336970.jpg" alt="Image 3">
-            <img src="a95c503df3f4775e7c32d6dcf814e248.jpg" alt="Image 4">
-            <img src="f014ad6432a6aad6eae8559dab356fff.jpg" alt="Image 5">
-            <img src="7823f0b4f181d10344139be65ac0cd7a.jpg" alt="Image 6">
-            <img src="d66b865ee761a0ae94008cf7f026721a.jpg" alt="Image 7">
-            <img src="06181a08c1498f0f88a511bf67569445.jpg" alt="Image 8">
+        <div class="gym-card">
+          <img src="img/dumbbell.jpg" alt="dumbbell">
+          <h3 class="gym-card-title">
+            Dumbbell
+          </h3>
         </div>
-    </div>
-</body>
+        <div class="gym-card">
+          <img src="img/lat-pulldown-machine.jpg" alt="lat-pulldown-machine">
+          <h3 class="gym-card-title">
+            Lat pulldown machine
+          </h3>
+        </div>
+        <div class="gym-card">
+          <img src="img/pec-dec.jpg" alt="pec-dec">
+          <h3 class="gym-card-title">
+            Pec dec
+          </h3>
+        </div>
+        <div class="gym-card">
+          <img src="img/squat-rack.jpg" alt="squat-rack">
+          <h3 class="gym-card-title">
+            Squat rack
+          </h3>
+        </div>
+        <div class="gym-card">
+          <img src="img/treadmill.jpg" alt="treadmill">
+          <h3 class="gym-card-title">
+            Treadmill
+          </h3>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- alat gym sect end -->
+
+    <!-- contact sect start -->
+    <section id="contact" class="contact">
+       <h2><span>Contact</span> Us</h2>
+
+       <div class="row">
+        <form action="">
+          <div class="in-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama">
+          </div>
+          <div class="in-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email">
+          </div>
+          <div class="in-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="phone number">
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+       </div>
+    </section>
+    <!-- contact sect end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#tools">Alat Gym</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by Jordi Abrar Satria. | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+
+    
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
