@@ -17,3 +17,4 @@ Route::get('/genre', function () {
 Route::get('/mood', function () {
     return view('mood');
 });
+
