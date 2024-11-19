@@ -72,16 +72,4 @@ body {
     margin: 0;
 }
 
-/* Kartu untuk tombol "Lihat lebih banyak" */
-.more-button a {
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px;
-    color: #007bff;
-}
 
-.more-button a:hover {
-    text-decoration: underline;
-}

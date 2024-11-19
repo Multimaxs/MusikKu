@@ -1,0 +1,115 @@
+/* Styling umum untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header untuk nama artis */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Styling gambar artis */
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Deskripsi artis */
+p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Heading untuk daftar lagu */
+h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #6fdbe7;
+}
+
+/* Daftar lagu */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    width: 80%;
+    background-color: #e9f9ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Item lagu */
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    color: #2e2e2e;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Button dropdown */
+ul li span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #6fdbe7;
+    text-decoration: underline;
+}
+
+/* Tombol daftar dan masuk */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #2e2e2e;
+    border: 2px solid #6fdbe7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #6fdbe7;
+    color: #2e2e2e;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}

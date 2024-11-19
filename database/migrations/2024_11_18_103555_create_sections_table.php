@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('thumbnail');
             $table->longText('content');
-            $table->enum('post_as',['ALAT_GYM'])->nullable();
+            $table->enum('post_as',['ARTIS'])->nullable();
             $table->timestamps();
         });
     }

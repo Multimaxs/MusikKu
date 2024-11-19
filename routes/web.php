@@ -6,9 +6,10 @@ use App\Http\Controllers\FrontendSectionController;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/artis', [FrontendSectionController::class, 'index'], function () {
-    return view('artis');
-});
+Route::get('/artis', [FrontendSectionController::class, 'index']);
+Route::get('/artis/{id}', [FrontendSectionController::class, 'show']);
+
+
 Route::get('/genre', function () {
     return view('genre');
 });

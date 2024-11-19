@@ -16,6 +16,6 @@ class FrontendSectionController extends Controller
     public function show($id)
     {
         $section = Section::findOrFail($id);
-        return view('frontend.sections.show', compact('section')); // This can remain unchanged
+        return view('detailartis', compact('section')); // This can remain unchanged
     }
 }

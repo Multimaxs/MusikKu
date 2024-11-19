@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Artis</title>
-    <link rel="stylesheet" href="{{ asset('assets/CSS/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/CSS/artis.css') }}">
 </head>
 <body>
     <section class="artist-list">
@@ -20,18 +20,16 @@
                 <div class="artist-grid">
                     @foreach ($sections as $section)
                         <div class="artist-card">
-                            <div class="artist-image">
-                                <img loading="lazy" src="{{ Storage::url($section->thumbnail) }}" alt="{{ $section->title }}">
-                            </div>
-                            <div class="artist-name">
-                                <p>{{ $section->title }}</p>
-                            </div>
+                            <a href="{{ url('/artis/' . $section->id) }}">
+                                <div class="artist-image">
+                                    <img loading="lazy" src="{{ Storage::url($section->thumbnail) }}" alt="{{ $section->title }}">
+                                </div>
+                                <div class="artist-name">
+                                    <p>{{ $section->title }}</p>
+                                </div>
+                            </a>
                         </div>
                     @endforeach
-                    <!-- Tombol untuk melihat lebih banyak -->
-                    <div class="artist-card more-button">
-                        <a href="{{ url('/sections') }}">Lihat lebih banyak</a>
-                    </div>
                 </div>
             @endif
         </div>
