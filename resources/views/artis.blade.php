@@ -12,13 +12,13 @@
             <input type="text" placeholder="Cari Artis" />
         </div>
         <div class="container">
-            @if ($sections->isEmpty())
+            @if ($artis->isEmpty())
                 <div class="warning" role="alert">
                     Data tidak ditemukan
                 </div>
             @else
                 <div class="artist-grid">
-                    @foreach ($sections as $section)
+                    @foreach ($artis as $section)
                         <div class="artist-card">
                             <a href="{{ url('/artis/' . $section->id) }}">
                                 <div class="artist-image">

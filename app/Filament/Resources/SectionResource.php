@@ -32,7 +32,9 @@ class SectionResource extends Resource
                     ->required()
                     ->columnSpanFull(),
                 Forms\Components\Select::make('post_as')->options([
-                    'ARTIS'=>'ARTIS'
+                    'ARTIS'=>'ARTIS',
+                    'MOOD'=>'MOOD',
+                    'GENRE'=>'GENRE'
                 ])
             ]);
     }

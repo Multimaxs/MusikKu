@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="{{ asset('assets/CSS/detailartis.css') }}">
 </head>
 <body>
-    <h1>{{ $showartis->title }}</h1>
-    <img src="{{ Storage::url($showartis->thumbnail) }}" alt="{{ $showartis->title }}">
-    <p>{{ $showartis->content }}</p>
+    <h1>{{ $showmood->title }}</h1>
+    <img src="{{ Storage::url($showmood->thumbnail) }}" alt="{{ $showmood->title }}">
+    <p>{{ $showmood->content }}</p>
 
     <h2>Daftar Lagu</h2>
     <ul>
