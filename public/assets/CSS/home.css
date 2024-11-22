@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
 }
 
 .container{
@@ -9,5 +10,77 @@
     width: 100%;
     background: linear-gradient(180deg,#F0FAFB,#81C3FD);
 
+}
+.navbar {
+    background-color:#F0FAFB; 
+    padding: 10px 20px; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px; /* Menambahkan jarak kiri-kanan pada nav-container */
+}
+
+
+.nav-container h2 {
+    color: black;
+    margin: 0;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container ul li {
+    .nav-container ul li {
+        margin: 0 10px; /* Kurangi nilai */
+    }
+    
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+}
+
+button {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+button:hover {
+    background-color: #333;
+    color: #F0FAFB;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; 
+}
+
+.menu-item.beranda a {
+   color: #5D4E4E;
+}
+
+.menu-item.musik a {
+    color: black;
+}
+
+.menu-item.artis a {
+    color: black;
 }
 
