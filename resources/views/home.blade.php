@@ -15,28 +15,27 @@
         <div class="nav-container">
             <h2 class="logo">MusikKu</h2>
             <ul>
-    <li class="menu-item beranda"><a href="/">Beranda</a></li>
-    <li class="menu-item musik"><a href="/musik">Musik</a></li>
-    <li class="menu-item artis"><a href="/artis">Artis</a></li>
-</ul>
+                <li class="menu-item beranda"><a href="/">Beranda</a></li>
+                <li class="menu-item musik"><a href="/musik">Musik</a></li>
+                <li class="menu-item artis"><a href="/artis">Artis</a></li>
+            </ul>
 
-                @guest
-                <button type="button">Daftar</button>
-                <button type="button">Masuk</button>
-                    <!-- Tampilkan tombol Sign In dan Log In jika user belum login -->
-                    <!-- <a href="/register" class="btn btn-signin">Sign In</a>
-                    <a href="/login" class="btn btn-login">Log In</a> -->
-                @endguest
+            @php
+                $isAuthenticated = Auth::guard('pendengar')->check();
+            @endphp
 
-                @auth
-                    <form action="{{ route('logout') }}" method="POST" style="display: inline;">
-                    @csrf
-                        <button type="submit" class="btn btn-logout">Log Out</button>
-                    </form>
-                @endauth
+            @if($isAuthenticated)
+                <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                @csrf
+                    <button type="submit" class="btn btn-logout">Log Out</button>
+                </form>
+            @else
+                <button type="button" onclick="window.location.href='/register'">Daftar</button>
+                <button type="button" onclick="window.location.href='/login'">Masuk</button>
+            @endif
             </div>
             <div class="hero-image">
-            <img src="{{ asset('assets/img/3dicons.png') }}" alt="3D Icons">
+            <img src="{{ asset('assets/CSS/img/3dicons.png') }}" alt="3D Icons">
             </div>
         </div>
     </nav>

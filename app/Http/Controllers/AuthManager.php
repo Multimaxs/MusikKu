@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\models\User;
+use App\Models\Pendengar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -19,17 +19,18 @@ class AuthManager extends Controller
         return view('register');
     }
 
-    function loginPost(Request $request){
+    public function loginPost(Request $request){
         $request->validate([
-            'email' => 'required',
-            'password' => 'required'
+            'email' => 'required|email',
+            'password' => 'required',
         ]);
 
         $credentials = $request->only('email', 'password');
-        if(Auth::attempt($credentials)){
-            return redirect()->intended(route('home'));
+        if (Auth::guard('pendengar')->attempt($credentials)) {
+            return redirect()->intended(route('home'))->with('success', 'Login berhasil');
         }
-        return redirect(route('login'))->with("error", "Skill issue");
+
+        return redirect(route('login'))->with('error', 'Email atau password salah');
     }
 
     function registerPost(Request $request){
@@ -39,7 +40,7 @@ class AuthManager extends Controller
             'password' => 'required'
         ]);
 
-        $user = new User();
+        $user = new Pendengar();
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);

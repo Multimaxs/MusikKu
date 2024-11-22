@@ -40,6 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'pendengar' => [
+            'driver' => 'session',
+            'provider' => 'pendengar',
+        ],
     ],
 
     /*
@@ -63,6 +68,13 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', App\Models\User::class),
+    
+        ],
+        
+        'pendengar' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL', App\Models\Pendengar::class),
+    
         ],
 
         // 'users' => [
@@ -97,7 +109,15 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+        'pendengar' => [
+            'provider' => 'pendengar',
+            'table' => env('AUTH_PASSWORD_RESET_TOKEN_TABLE', 'password_reset_tokens'),
+            'expire' => 60,
+            'throttle' => 60,
+        ],
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------
