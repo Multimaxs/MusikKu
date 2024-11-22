@@ -21,8 +21,8 @@
 </ul>
 
                 @guest
-                <button type="button">Daftar</button>
-                <button type="button">Masuk</button>
+                <button type="button" onclick="window.location.href='/register'">Daftar</button>
+                    <button type="button" onclick="window.location.href='/login'">Masuk</button>
                     <!-- Tampilkan tombol Sign In dan Log In jika user belum login -->
                     <!-- <a href="/register" class="btn btn-signin">Sign In</a>
                     <a href="/login" class="btn btn-login">Log In</a> -->
