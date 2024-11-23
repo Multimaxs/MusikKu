@@ -20,7 +20,7 @@
                 <div class="mood-grid">
                     @foreach ($mood as $section)
                         <div class="mood-card">
-                            <a href="{{ url('/mood/' . $section->id) }}">
+                            <a href="{{ url('/mood/' . $section->tipe_id) }}">
                                 <div class="mood-image">
                                     <img loading="lazy" src="{{ Storage::url($section->thumbnail) }}" alt="{{ $section->title }}">
                                 </div>

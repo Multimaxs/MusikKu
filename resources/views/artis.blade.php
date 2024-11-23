@@ -20,7 +20,7 @@
                 <div class="artist-grid">
                     @foreach ($artis as $section)
                         <div class="artist-card">
-                            <a href="{{ url('/artis/' . $section->id) }}">
+                            <a href="{{ url('/artis/' . $section->tipe_id) }}">
                                 <div class="artist-image">
                                     <img loading="lazy" src="{{ Storage::url($section->thumbnail) }}" alt="{{ $section->title }}">
                                 </div>

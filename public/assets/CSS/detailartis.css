@@ -94,6 +94,110 @@ button:hover {
     color: #2e2e2e;
 }
 
+h1, h2, h3 {
+    color: #444;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul li {
+    flex: 1 1 calc(100% - 20px);
+    margin-bottom: 20px;
+}
+
+/* Struktur utama */
+.song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 800px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+}
+
+.song-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Dropdown */
+.dropdowns {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.dropdown-btn:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #0056b3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
     img {

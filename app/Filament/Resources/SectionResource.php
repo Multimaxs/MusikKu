@@ -23,6 +23,8 @@ class SectionResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\TextInput::make('tipe_id')
+                    ->required(),
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
@@ -43,6 +45,8 @@ class SectionResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('tipe_id')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('thumbnail')

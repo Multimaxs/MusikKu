@@ -11,10 +11,31 @@
     <img src="{{ Storage::url($showmood->thumbnail) }}" alt="{{ $showmood->title }}">
     <p>{{ $showmood->content }}</p>
 
-    <h2>Daftar Lagu</h2>
-    <ul>
-        <li>Contoh Lagu 1</li>
-        <li>Contoh Lagu 2</li>
-    </ul>
+    <h2>Daftar Lagu:</h2>
+    <div>
+        @forelse ($songs as $song)
+            <div class="song-container">
+                <div class="song-header">
+                    <h3>{{ $song->judul }}</h3>
+                    <div class="dropdowns">
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Deskripsi</button>
+                            <div class="dropdown-content">
+                                <p>{{ $song->deskripsi }}</p>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">Lirik</button>
+                            <div class="dropdown-content">
+                                <p>{{ $song->lirik }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @empty
+            <p>Tidak ada lagu untuk mood ini.</p>
+        @endforelse
+    </div>
 </body>
 </html>

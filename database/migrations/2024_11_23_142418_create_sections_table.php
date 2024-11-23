@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('sections', function (Blueprint $table) {
-            $table->id();
+            $table->string('tipe_id')->primary(); // Primary Key
             $table->string('title');
-            $table->string('thumbnail');
-            $table->longText('content');
-            $table->enum('post_as',['ARTIS','MOOD','GENRE'])->nullable();
+            $table->string('thumbnail')->nullable();
+            $table->longText('content')->nullable();
+            $table->enum('post_as', ['ARTIS', 'MOOD', 'GENRE']);
             $table->timestamps();
         });
     }

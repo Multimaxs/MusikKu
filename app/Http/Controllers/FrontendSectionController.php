@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Section;
+use App\Models\Song;
 use Illuminate\Http\Request;
 
 class FrontendSectionController extends Controller
@@ -13,11 +14,11 @@ class FrontendSectionController extends Controller
         return view('artis', compact('artis'));
     }
 
-
     public function showartis($id)
     {
         $showartis = Section::findOrFail($id);
-        return view('detailartis', compact('showartis')); // This can remain unchanged
+        $songs = Song::where('artis_id', $showartis->tipe_id)->get();
+        return view('detailartis', compact('showartis', 'songs'));
     }
 
     public function mood()
@@ -29,7 +30,8 @@ class FrontendSectionController extends Controller
     public function showmood($id)
     {
         $showmood = Section::findOrFail($id);
-        return view('detailmood', compact('showmood')); // This can remain unchanged
+        $songs = Song::where('mood_id', $showmood->tipe_id)->get();
+        return view('detailmood', compact('showmood', 'songs'));
     }
 
     public function genre()
@@ -41,7 +43,7 @@ class FrontendSectionController extends Controller
     public function showgenre($id)
     {
         $showgenre = Section::findOrFail($id);
-        return view('detailgenre', compact('showgenre')); // This can remain unchanged
+        $songs = Song::where('genre_id', $showgenre->tipe_id)->get();
+        return view('detailgenre', compact('showgenre', 'songs'));
     }
-
 }
