@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jockey One", sans-serif;
+    background: linear-gradient(180deg,#F0FAFB,#81C3FD);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    /* width: 350px; */
+    text-align: center; /* Memusatkan teks secara horizontal */
+    }
+
+.title {
+        margin-bottom: 50px;
+        text-align: center; /* Memusatkan teks secara horizontal */
+
+    }
+
+
+/* Input Fields */
+.form-control {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;   
+}
+
+.form-control::placeholder {
+    color: #aaa; /* Warna teks placeholder */
+    font-style: italic; /* Membuat placeholder miring */
+}
+/* Button */
+.btn {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    background: #89AAC7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: 89AAC7
+}
+
+/* Options (Checkbox + Forgot Password) */
+.options {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.forgot-password {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 15px;
+}
+
+.text-primary {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+.text-primary:hover {
+    text-decoration: underline;
+}

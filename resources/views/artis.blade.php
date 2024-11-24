@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="{{ asset('assets/CSS/artis.css') }}">
 </head>
 <body>
+ <!-- Navigation Bar -->
+ <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">MusikKu</h2>
+            <ul>
+                <li class="menu-item beranda"><a href="/">Beranda</a></li>
+                <li class="menu-item musik"><a href="/musik">Musik</a></li>
+                <li class="menu-item artis"><a href="/artis">Artis</a></li>
+            </ul>
+
+            @php
+                $isAuthenticated = Auth::guard('pendengar')->check();
+            @endphp
+
+            @if($isAuthenticated)
+                <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                @csrf
+                    <button type="submit" class="btn btn-logout">Log Out</button>
+                </form>
+            @else
+                <button type="button" onclick="window.location.href='/register'">Daftar</button>
+                <button type="button" onclick="window.location.href='/login'">Masuk</button>
+            @endif
+
+        </div>
+    </nav>
+  <!-- Navigation Bar -->
+
     <section class="artist-list">
         <div class="search-bar">
             <input type="text" placeholder="Cari Artis" />
