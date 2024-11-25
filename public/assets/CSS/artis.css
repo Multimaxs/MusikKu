@@ -1,15 +1,89 @@
 /* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #add8e6; /* Background biru muda */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
+ *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Jockey One", sans-serif;
+        background: linear-gradient(180deg,#F0FAFB,#81C3FD);
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+    
+    }
+    .navbar {
+        background-color:#F0FAFB; 
+        padding: 10px 20px; 
+    }
+    
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px; /* Menambahkan jarak kiri-kanan pada nav-container */
+    }
+    
+    
+    .nav-container h2 {
+        color: black;
+        margin: 0;
+    }
+    
+    .nav-container ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-container ul li {
+        .nav-container ul li {
+            margin: 0 10px; /* Kurangi nilai */
+        }
+        
+    }
+    
+    .nav-container ul li a {
+        text-decoration: none;
+    }
+    
+    button {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        padding: 10px 15px;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 10px;
+        margin-right: 10px;
+        gap: 5px;
+    }
+    
+    button:hover {
+        background-color: #333;
+        color: #F0FAFB;
+    }
+    
+    .menu-item a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 15px 20px;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 5px; 
+    }
+    
+    .menu-item.beranda a {
+       color: #5D4E4E;
+    }
+    
+    .menu-item.musik a {
+        color: black;
+    }
+    
+    .menu-item.artis a {
+        color: black;
+    }
+    
 /* Container utama */
 .container {
     max-width: 1200px;
@@ -33,16 +107,16 @@ body {
 }
 
 /* Grid layout untuk kartu artis */
-.artist-grid {
+/* .artist-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
     justify-items: center;
-}
+} */
 
 /* Kartu artis */
 .artist-card {
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -57,7 +131,7 @@ body {
 
 /* Gambar dalam kartu */
 .artist-card .artist-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: block;
     border-bottom: 2px solid #ddd;
@@ -71,5 +145,4 @@ body {
     color: #333;
     margin: 0;
 }
-
 

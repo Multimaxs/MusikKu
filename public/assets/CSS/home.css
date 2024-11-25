@@ -12,9 +12,20 @@
 
 }
 .navbar {
-    background-color:#F0FAFB; 
-    padding: 10px 20px; 
+    background-color: transparent !important; /* Paksa transparan */
+    box-shadow: none !important; /* Pastikan bayangan dihilangkan */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 .nav-container {
     display: flex;
@@ -34,53 +45,106 @@
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 15px;
+    gap: 25px; /* Memberikan jarak antar item menu */
+    margin-left: 20px; /* Jarak antara logo dan menu */
 }
-
-.nav-container ul li {
-    .nav-container ul li {
-        margin: 0 10px; /* Kurangi nilai */
-    }
     
-}
+    .nav-container .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
 .nav-container ul li a {
     text-decoration: none;
+    margin: 0 10px; /* Kurangi nilai */
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-size: 1.2rem; /* Memperbesar font */
+    font-weight: 600; /* Menebalkan teks */
+    transition: color 0.3s; /* Animasi hover */
 }
 
+
 button {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 10px;
-    margin-right: 10px;
-    gap: 5px;
+    padding: 5px 10px; /* Mengatur ruang dalam tombol */
+    font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
+    height: 30px;      /* Mengatur tinggi tombol */
+    border-radius: 5px; /* Opsional: Membuat sudut membulat */
 }
 
 button:hover {
     background-color: #333;
-    color: #F0FAFB;
+    /* color: #F0FAFB; */
 }
 
-.menu-item a {
+
+.menu a {
     text-decoration: none;
-    color: white;
+    /* color: black; */
     font-size: 16px;
     padding: 15px 20px;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px; 
 }
 
-.menu-item.beranda a {
+.menu .beranda a {
    color: #5D4E4E;
 }
 
-.menu-item.musik a {
+.menu.musik a {
     color: black;
 }
 
-.menu-item.artis a {
+.menu .artis a {
     color: black;
 }
 
+.hero-section {
+    display: flex; /* Membuat tulisan dan gambar berada di baris yang sama */
+    align-items: center; /* Meratakan elemen secara vertikal */
+    justify-content: space-between; /* Memberikan jarak maksimum antara tulisan dan gambar */
+    padding: 40px 60px; /* Menambahkan jarak luar */
+    gap: 20px; /* Jarak antara teks dan gambar */
+}
+
+.hero-content {
+    max-width: 50%; /* Batas lebar teks agar tidak terlalu besar */
+}
+
+
+.hero-content h3 {
+    font-size: 1.5rem; /* Ukuran font judul */
+    margin-bottom: 20px;
+    font-weight: bold; /* Membuat tulisan lebih tebal */
+    color: #333; /* Warna teks */
+}
+.hero-content h1 {
+    font-size: 3rem; /* Ukuran font judul */
+    margin-bottom: 20px;
+    font-weight: bold; /* Membuat tulisan lebih tebal */
+    color: #333; /* Warna teks */
+}
+
+.hero-content p {
+    font-size: 1rem; /* Ukuran font paragraf */
+    line-height: 1.6;
+    color: #555;
+}
+
+.hero-image {
+    max-width: 50%; /* Gambar tidak akan melampaui 50% lebar container */
+    display: flex; /* Menjaga gambar tetap fleksibel */
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 500px; /* Menentukan ukuran gambar */
+    max-width: 100%; /* Gambar responsif */
+    height: auto; /* Menjaga proporsi gambar */
+}

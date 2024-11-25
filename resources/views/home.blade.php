@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('assets/CSS/home.css') }}">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
-</style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
     <title>MusikKu</title>
 </head>
 <body>
@@ -14,33 +12,46 @@
     <nav class="navbar">
         <div class="nav-container">
             <h2 class="logo">MusikKu</h2>
-            <ul>
-                <li class="menu-item beranda"><a href="/">Beranda</a></li>
-                <li class="menu-item musik"><a href="/musik">Musik</a></li>
-                <li class="menu-item artis"><a href="/artis">Artis</a></li>
+            <ul class="menu">
+                <li class="beranda"><a href="{{ url('/') }}">Beranda</a></li>
+                <li class="musik"><a href="{{ url('/musik') }}">Musik</a></li>
+                <li class="artis"><a href="{{ url('/artis') }}">Artis</a></li>
             </ul>
 
             @php
                 $isAuthenticated = Auth::guard('pendengar')->check();
             @endphp
 
-            @if($isAuthenticated)
+            @if ($isAuthenticated)
                 <form action="{{ route('logout') }}" method="POST" style="display: inline;">
-                @csrf
+                    @csrf
                     <button type="submit" class="btn btn-logout">Log Out</button>
                 </form>
             @else
-                <button type="button" onclick="window.location.href='/register'">Daftar</button>
-                <button type="button" onclick="window.location.href='/login'">Masuk</button>
+                <button type="button" class="btn btn-register" onclick="window.location.href='{{ route('register') }}'">Daftar</button>
+                <button type="button" class="btn btn-login" onclick="window.location.href='{{ route('login') }}'">Masuk</button>
             @endif
-            </div>
-            <div class="hero-image">
-            <img src="{{ asset('assets/img/3dicons.png') }}" alt="3D Icons">
-            </div>
         </div>
     </nav>
+
+    <!-- Hero Section -->
     <div class="container">
-        <!-- Konten Utama -->
+    <div class="hero-section">
+    <!-- Konten Teks -->
+    <div class="hero-content">
+        <h3>Selamat Datang di MusikKu!</h3>
+        <h1>Temukan dunia musik yang tak terbatas!</h1>
+        <p>
+        Dengan katalog musik kami, Anda dapat menjelajahi ribuan lagu, album, dan artis dari berbagai genre dan era. Apakah Anda sedang mencari hits terbaru, lagu-lagu legendaris, atau ingin menemukan musik baru sesuai selera Anda, kami punya semuanya!
+        </p>
+    </div>
+
+    <!-- Gambar -->
+    <div class="hero-image">
+        <img src="{{ asset('assets/img/3dicons.png') }}" alt="3D Icons">
+    </div>
+</div>
+
     </div>
 </body>
 </html>
