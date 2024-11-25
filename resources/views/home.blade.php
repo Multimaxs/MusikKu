@@ -23,6 +23,10 @@
             @endphp
 
             @if ($isAuthenticated)
+                <form action="{{ route('profile') }}" style="display: inline;">
+                    @csrf
+                    <button type="submit" class="btn btn-logout">Profil</button>
+                </form>
                 <form action="{{ route('logout') }}" method="POST" style="display: inline;">
                     @csrf
                     <button type="submit" class="btn btn-logout">Log Out</button>
