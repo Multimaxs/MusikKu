@@ -11,6 +11,12 @@
     <img src="{{ Storage::url($showgenre->thumbnail) }}" alt="{{ $showgenre->title }}">
     <p>{{ $showgenre->content }}</p>
 
+    <form action="{{ route('profile.like.genre') }}" method="POST">
+        @csrf
+        <input type="hidden" name="genre_id" value="{{ $showgenre->tipe_id }}">
+        <button type="submit">Sukai Genre</button>
+    </form>
+
     <h2>Daftar Lagu:</h2>
     <div>
         @forelse ($songs as $song)
@@ -21,6 +27,13 @@
                         <button onclick="toggleAudio(this, '{{ Storage::url($song->audio_file) }}')">▶</button>
                     </div>
                     <h3>{{ $song->judul }}</h3>
+
+                    <form action="{{ route('profile.like.song') }}" method="POST">
+                    @csrf
+                        <input type="hidden" name="song_id" value="{{ $song->id }}">
+                        <button type="submit">Sukai Lagu</button>
+                    </form>
+
                     <div class="dropdowns">
                         <div class="dropdown">
                             <button class="dropdown-btn">Deskripsi</button>
@@ -79,6 +92,52 @@
             button.textContent = '⏸';
         }
     }
+    
+    function likeGenre(genreId, button) {
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+            
+            fetch('/like/genre', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                body: JSON.stringify({ genre_id: genreId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    button.textContent = 'Genre Disukai';
+                    button.disabled = true;
+                } else {
+                    alert('Gagal menyukai genre.');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function likeSong(songId, button) {
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+            
+            fetch('/like/song', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                body: JSON.stringify({ song_id: songId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    button.textContent = 'Lagu Disukai';
+                    button.disabled = true;
+                } else {
+                    alert('Gagal menyukai lagu.');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
 </script>
 
 </body>
