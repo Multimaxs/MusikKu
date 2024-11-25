@@ -29,10 +29,6 @@
                 @csrf
                     <button type="submit" class="btn btn-logout">Log Out</button>
                 </form>
-                <form action="{{ route('/profil') }}" method="POST" style="display: inline;">
-                @csrf
-                    <button type="submit" class="btn btn-logout">Log Out</button>
-                </form>
             @else
                 <button type="button" onclick="window.location.href='/register'">Daftar</button>
                 <button type="button" onclick="window.location.href='/login'">Masuk</button>
