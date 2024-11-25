@@ -16,6 +16,10 @@
         @forelse ($songs as $song)
             <div class="song-container">
                 <div class="song-header">
+                    <div class="song-image">
+                        <img src="{{ Storage::url($song->gambar) }}" alt="{{ $song->judul }}">
+                        <button onclick="toggleAudio(this, '{{ Storage::url($song->audio_file) }}')">▶</button>
+                    </div>
                     <h3>{{ $song->judul }}</h3>
                     <div class="dropdowns">
                         <div class="dropdown">
@@ -37,5 +41,45 @@
             <p>Tidak ada lagu untuk mood ini.</p>
         @endforelse
     </div>
+
+<script>
+    let currentAudio = null; 
+    let currentButton = null;
+
+    function toggleAudio(button, audioSrc) {
+        if (currentAudio && currentAudio.src !== audioSrc) {
+            currentAudio.pause();
+            currentButton.textContent = '▶';
+            currentAudio = null;
+            currentButton = null;
+        }
+
+        else if (!currentAudio || currentAudio.src !== audioSrc) {
+            currentAudio = new Audio(audioSrc); 
+            currentAudio.play();
+            button.textContent = '⏸';
+
+            // Ketika audio selesai diputar
+            currentAudio.onended = () => {
+                button.textContent = '▶';
+                currentAudio = null;
+                currentButton = null;
+            };
+
+            currentButton = button;
+        } 
+
+        else if (!currentAudio.paused) {
+            currentAudio.pause();
+            button.textContent = '▶';
+        } 
+
+        else {
+            currentAudio.play();
+            button.textContent = '⏸';
+        }
+    }
+</script>
+
 </body>
 </html>
