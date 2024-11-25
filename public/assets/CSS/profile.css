@@ -1,0 +1,120 @@
+/* Reset CSS */
+body, h1, h2, p, div, form, input, button, img, audio {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Profile Picture Section */
+.profile-picture {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    object-fit: cover;
+}
+
+.profile-picture form {
+    margin-top: 10px;
+}
+
+.profile-picture input[type="file"] {
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.profile-picture button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-picture button:hover {
+    background-color: #45a049;
+}
+
+/* Profile Info */
+.profile-info {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+/* Liked Sections */
+.liked-section {
+    margin-bottom: 30px;
+}
+
+.liked-section h2 {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.artist-item, .song-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artist-item p, .song-item p {
+    flex: 1;
+    margin: 0;
+}
+
+/* Audio Player */
+.song-item audio {
+    margin-left: 15px;
+    flex: 0 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .artist-item, .song-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .song-item audio {
+        margin: 10px 0 0 0;
+    }
+}
