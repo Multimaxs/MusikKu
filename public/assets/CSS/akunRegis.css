@@ -1,0 +1,96 @@
+body {
+    font-family: "Jockey One", sans-serif;
+    background: linear-gradient(180deg,#F0FAFB,#81C3FD);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    background-color: #627584;
+    padding: 40px; /* Memperbesar padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Memperbesar lebar box */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px; /* Menambah jarak antara judul dan form */
+    font-size: 28px; /* Memperbesar ukuran teks */
+    color: white;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.inputBox {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.inputBox label {
+    display: block;
+    margin-bottom: 10px; /* Memberikan jarak antara label dan input */
+    color: #333;
+    font-size: 16px; /* Memperbesar ukuran font label */
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px; /* Menambah padding input agar lebih besar */
+    margin-bottom: 20px; /* Memberikan jarak antar input */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Memperbesar radius border */
+    box-sizing: border-box;
+    font-size: 16px; /* Memperbesar font di dalam input */
+}
+
+button {
+    width: 100%;
+    padding: 15px; /* Memperbesar tombol */
+    background-color: #2a3643;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px; /* Memperbesar ukuran font tombol */
+}
+
+button:hover {
+    background-color: #519eeb;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.register-link a {
+    color: #f4f9fff6;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

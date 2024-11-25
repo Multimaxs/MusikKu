@@ -14,8 +14,9 @@
             <h2 class="logo">MusikKu</h2>
             <ul class="menu">
                 <li class="beranda"><a href="{{ url('/') }}">Beranda</a></li>
-                <li class="musik"><a href="{{ url('/musik') }}">Musik</a></li>
                 <li class="artis"><a href="{{ url('/artis') }}">Artis</a></li>
+                <li class="musik"><a href="{{ url('/mood') }}">Mood</a></li>
+                <li class="musik"><a href="{{ url('/genre') }}">Genre</a></li>
             </ul>
 
             @php

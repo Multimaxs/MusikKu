@@ -6,11 +6,11 @@
         font-family: "Jockey One", sans-serif;
         background: linear-gradient(180deg,#F0FAFB,#81C3FD);
     }
-    .container{
+    /* .container{
         height: 100vh;
         width: 100%;
     
-    }
+    } */
     .navbar {
         background-color:#F0FAFB; 
         padding: 10px 20px; 
@@ -36,12 +36,11 @@
         padding: 0;
     }
     
-    .nav-container ul li {
-        .nav-container ul li {
-            margin: 0 10px; /* Kurangi nilai */
+ .nav-container ul li {
+  margin: 0 10px; /* Kurangi nilai */
         }
         
-    }
+    
     
     .nav-container ul li a {
         text-decoration: none;
@@ -93,6 +92,7 @@
 
 /* Search bar styling */
 .search-bar {
+    margin-top: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
