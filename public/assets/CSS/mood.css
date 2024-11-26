@@ -53,13 +53,13 @@ body{
     margin-left: 20px; /* Jarak antara logo dan menu */
 }
     
-.nav-container .btn {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .nav-container .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
 .nav-container ul li a {
     text-decoration: none;
