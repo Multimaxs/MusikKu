@@ -1,19 +1,22 @@
 /* General body styling */
- *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Jockey One", sans-serif;
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+    background: linear-gradient(180deg,#FEF3E2,#FA4032);
+    max-height: 200vh;
+
+
     }
     .container{
         height: 100vh;
         width: 100%;
-        padding: 20px;
-        background: linear-gradient(180deg,#F0FAFB,#5C4D29);   
+        padding: 20px; 
     }
 
     .navbar {
-        background-color: transparent !important; /* Paksa transparan */
+        background-color: #fa3f3290; /* Paksa transparan */
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
     padding: 10px 20px;
     /* display: flex; */
@@ -70,8 +73,7 @@
 
  .nav-container ul li a:hover {
     color: white; /* Warna teks saat hover */
-    background-color: #5C4D29; /* Warna latar belakang saat hover */
-    padding: 10px 15px; /* Tambahkan ruang dalam saat hover */
+    background-color: #5C4D29; /* Warna latar belakang saat hover */ /* Tambahkan ruang dalam saat hover */
     border-radius: 5px; /* Sudut membulat */
     transition: background-color 0.3s, color 0.3s; /* Efek transisi yang halus */
 }
@@ -91,7 +93,7 @@
         .nav-container .btn:hover {
             background-color: #5C4D29; /* Warna latar belakang saat hover */
             color: white; /* Warna teks saat hover */
-            transform: scale(1.05); /* Membuat tombol sedikit membesar */
+            transform: scale(1.05); 
             transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Efek transisi */
         }
         

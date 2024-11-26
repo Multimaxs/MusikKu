@@ -53,7 +53,7 @@
 
     <!-- Gambar -->
     <div class="hero-image">
-        <img src="{{ asset('assets/img/3dicons.png') }}" alt="3D Icons">
+        <img src="{{ asset('assets/img/icon.png') }}" alt="3D Icons">
     </div>
 </div>
 
