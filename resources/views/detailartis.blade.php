@@ -14,7 +14,7 @@
         <div class="card-content">
             <h1>{{ $showartis->title }}</h1>
             <img src="{{ Storage::url($showartis->thumbnail) }}" alt="{{ $showartis->title }}">
-            <p>{{ $showartis->content }}</p>
+            <p>{!! strip_tags($showartis->content) !!}</p>
             <form action="{{ route('profile.like.artist') }}" method="POST"> 
                 @csrf
                 <input type="hidden" name="artist_id" value="{{ $showartis->tipe_id }}">

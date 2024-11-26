@@ -13,7 +13,7 @@ class SongResource extends Resource
 {
     protected static ?string $model = Song::class;
 
-
+    protected static ?string $navigationIcon = 'heroicon-o-musical-note';
 
     public static function form(Forms\Form $form): Forms\Form
     {

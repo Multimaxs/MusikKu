@@ -22,7 +22,7 @@
             @php
                 $isAuthenticated = Auth::guard('pendengar')->check();
             @endphp
-
+            <div class="btn-container">
             @if ($isAuthenticated)
                 <form action="{{ route('profile') }}" style="display: inline;">
                     @csrf
@@ -36,6 +36,7 @@
                 <button type="button" class="btn btn-register" onclick="window.location.href='{{ route('register') }}'">Daftar</button>
                 <button type="button" class="btn btn-login" onclick="window.location.href='{{ route('login') }}'">Masuk</button>
             @endif
+            </div>
         </div>
     </nav>
 

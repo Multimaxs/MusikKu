@@ -103,13 +103,37 @@ h1 {
 .artist-item p, .song-item p {
     flex: 1;
     margin: 0;
+    font-size: 4vh;
 }
 
+.artist-item img {
+    margin-right: 10px;
+    width: 150px; /* Sesuaikan ukuran */
+    height: 150px;
+    aspect-ratio: 1 / 1; /* Membuat gambar berbentuk persegi */
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+.song-item img {
+    margin-right: 10px;
+    width: 150px; /* Sesuaikan ukuran */
+    height: 150px;
+    aspect-ratio: 1 / 1; /* Membuat gambar berbentuk persegi */
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
 /* Audio Player */
 .song-item audio {
     margin-left: 15px;
     flex: 0 0 auto;
+    border: 2px solid #e6e614; /* Memberikan border */
+    border-radius: 30px; /* Membuat sudut membulat */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

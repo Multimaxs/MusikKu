@@ -9,7 +9,7 @@
 <body>
     <h1>{{ $showgenre->title }}</h1>
     <img src="{{ Storage::url($showgenre->thumbnail) }}" alt="{{ $showgenre->title }}">
-    <p>{{ $showgenre->content }}</p>
+    <p>{!! strip_tags($showgenre->content) !!}</p>
 
     <form action="{{ route('profile.like.genre') }}" method="POST">
         @csrf

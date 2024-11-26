@@ -9,7 +9,7 @@
 <body>
     <h1>{{ $showmood->title }}</h1>
     <img src="{{ Storage::url($showmood->thumbnail) }}" alt="{{ $showmood->title }}">
-    <p>{{ $showmood->content }}</p>
+    <p>{!! strip_tags($showmood->content) !!}</p>
 
     <form action="{{ route('profile.like.mood') }}" method="POST">
         @csrf

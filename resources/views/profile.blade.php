@@ -37,6 +37,7 @@
         <h2>Artis yang Disukai</h2>
         @forelse ($likedArtists as $artist)
             <div class="artist-item">
+                <img src="{{ Storage::url($artist->section->thumbnail) }}">
                 <p>{{ $artist->section->title }}</p>
             </div>
         @empty
@@ -48,6 +49,7 @@
         <h2>Genre yang Disukai</h2>
         @forelse ($likedGenres as $genre)
             <div class="artist-item">
+                <img src="{{ Storage::url($genre->section->thumbnail) }}">
                 <p>{{ $genre->section->title }}</p>
             </div>
         @empty
@@ -59,6 +61,7 @@
         <h2>Genre yang Disukai</h2>
         @forelse ($likedMoods as $mood)
             <div class="artist-item">
+                <img src="{{ Storage::url($mood->section->thumbnail) }}">
                 <p>{{ $mood->section->title }}</p>
             </div>
         @empty
@@ -71,6 +74,7 @@
         <h2>Lagu yang Disukai</h2>
         @forelse ($likedSongs as $likedSong)
             <div class="song-item">
+                <img src="{{ Storage::url($likedSong->song->gambar) }}">
                 <p>{{ $likedSong->song->judul }}</p>
                 <audio controls>
                     <source src="{{ Storage::url($likedSong->song->audio_file) }}" type="audio/mpeg">
