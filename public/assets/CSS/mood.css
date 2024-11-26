@@ -1,23 +1,34 @@
 /* General body styling */
-* {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Jockey One", sans-serif;
+    background: linear-gradient(180deg,#FEF3E2,#FA4032);
+    max-height: 200vh;
 }
 
-.container {
+.container{
     height: 100vh;
     width: 100%;
-    padding: 20px;
-    background: linear-gradient(180deg,#F0FAFB,#5C4D29);
+    padding: 20px; 
 }
 
-/* Navbar */
 .navbar {
-    background-color: transparent !important; /* Paksa transparan */
-    padding: 10px 20px; 
+    background-color: #fa3f3290; /* Paksa transparan */
+    box-shadow: none !important; /* Pastikan bayangan dihilangkan */
+    padding: 10px 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 .nav-container {
     display: flex;
@@ -25,6 +36,7 @@
     align-items: center;
     padding: 0 40px; /* Menambahkan jarak kiri-kanan pada nav-container */
 }
+
 
 .nav-container h2 {
     color: black;
@@ -36,93 +48,118 @@
     display: flex;
     margin: 0;
     padding: 0;
+    gap: 15px;
+    gap: 25px; /* Memberikan jarak antar item menu */
+    margin-left: 20px; /* Jarak antara logo dan menu */
 }
-
-.nav-container ul li {
-    margin: 0 10px; /* Jarak antar item menu */
+    
+.nav-container .btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .nav-container ul li a {
     text-decoration: none;
+    margin: 0 10px; /* Kurangi nilai */
+    color: #333;
+    font-size: 1.2rem; /* Memperbesar font */
+    font-weight: 600; /* Menebalkan teks */
+    transition: color 0.3s; /* Animasi hover */
 }
 
-/* Button */
+
 button {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 10px;
-    margin-right: 10px;
-    gap: 5px;
+    padding: 5px 10px; /* Mengatur ruang dalam tombol */
+    font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
+    height: 30px;      /* Mengatur tinggi tombol */
+    border-radius: 5px;
+    margin-left: 100px; /* Opsional: Membuat sudut membulat */
+    align-items: end;
 }
 
 button:hover {
     background-color: #333;
-    color: #F0FAFB;
+    /* color: #F0FAFB; */
+}
+
+
+.menu a {
+    text-decoration: none;
+    /* color: black; */
+    font-size: 16px;
+    padding: 15px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; 
+}
+
+.menu .beranda a {
+   color: #5D4E4E;
+}
+
+.menu.musik a {
+    color: black;
+}
+
+.menu .artis a {
+    color: black;
 }
 
 /* Search bar styling */
 .search-bar {
-    text-align: center; 
-    margin-bottom: 20px; 
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .search-bar input {
-    width: 50%; 
-    padding: 10px; 
-    border-radius: 8px; 
-    border: none; 
-    font-size: 16px; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Grid layout untuk kartu mood */
+/* Kartu Mood */
+.mood-card {
+    background-color: #fff; 
+    border-radius: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20 px;
+    height: auto;
+}
+
+.mood-card:hover {
+    transform: scale(1.05);
+}
+
+/* Gambar dalam kartu */
+.mood-card .mood-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Nama artis */
+.mood-card .mood-name p {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #333;
+    margin: 0;
+}
+
 .mood-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Mengatur kolom responsif */
     gap: 20px; 
     justify-items: center; 
-}
-
-/* Kartu mood */
-.mood-card {
-    background-color: #ffffff;
-    border-radius: 0; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-    height: auto;
-}
-
-.mood-card:hover {
-    transform: scale(1.05); 
-}
-
-/* Gambar dalam kartu */
-
-.mood-card .mood-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    overflow: hidden;
-}
-
-.mood-card .mood-image img {
-    width: auto; 
-    height: 100%; 
-    object-fit: cover;  
-}
-
-/* Nama mood */
-.mood-card .mood-name p {
-    font-size: 14px; 
-    font-weight: bold; 
-    padding: 10px 0; 
-    color: #333; 
-    margin: 0;
 }
