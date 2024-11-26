@@ -14,8 +14,9 @@
             <h2 class="logo">MusikKu</h2>
             <ul class="menu">
                 <li class="beranda"><a href="{{ url('/') }}">Beranda</a></li>
-                <li class="musik"><a href="{{ url('/musik') }}">Musik</a></li>
                 <li class="artis"><a href="{{ url('/artis') }}">Artis</a></li>
+                <li class="musik"><a href="{{ url('/mood') }}">Mood</a></li>
+                <li class="musik"><a href="{{ url('/genre') }}">Genre</a></li>
             </ul>
 
             @php
@@ -52,7 +53,7 @@
 
     <!-- Gambar -->
     <div class="hero-image">
-        <img src="{{ asset('assets/img/3dicons.png') }}" alt="3D Icons">
+        <img src="{{ asset('assets/img/icon.png') }}" alt="3D Icons">
     </div>
 </div>
 

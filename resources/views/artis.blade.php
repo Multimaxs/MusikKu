@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Artis</title>
     <link rel="stylesheet" href="{{ asset('assets/CSS/artis.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
 </head>
 <body>
  <!-- Navigation Bar -->
  <nav class="navbar">
         <div class="nav-container">
             <h2 class="logo">MusikKu</h2>
-            <ul>
-                <li class="menu-item beranda"><a href="/">Beranda</a></li>
-                <li class="menu-item musik"><a href="/musik">Musik</a></li>
-                <li class="menu-item artis"><a href="/artis">Artis</a></li>
+            <ul class="menu">
+                <li class="beranda"><a href="{{ url('/') }}">Beranda</a></li>
+                <li class="artis"><a href="{{ url('/artis') }}">Artis</a></li>
+                <li class="mood"><a href="{{ url('/mood') }}">Mood</a></li>
+                <li class="genre"><a href="{{ url('/genre') }}">Genre</a></li>
             </ul>
 
             @php
@@ -35,11 +37,11 @@
     </nav>
   <!-- Navigation Bar -->
 
-    <section class="artist-list">
+    <section class="container">
         <div class="search-bar">
             <input type="text" placeholder="Cari Artis" />
         </div>
-        <div class="container">
+        <div class="content">
             @if ($artis->isEmpty())
                 <div class="warning" role="alert">
                     Data tidak ditemukan

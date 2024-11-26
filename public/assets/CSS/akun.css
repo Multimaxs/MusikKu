@@ -1,89 +1,95 @@
-/* General Styles */
 body {
+    font-family: "Jockey One", sans-serif;
+    background: linear-gradient(180deg,#F0FAFB,#5C4D29);
     margin: 0;
     padding: 0;
-    font-family: "Jockey One", sans-serif;
-    background: linear-gradient(180deg,#F0FAFB,#81C3FD);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    place-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #627584 ;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(157, 19, 237, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-left: 480px;
+    position: relative;
 }
 
 
-.container {
-    padding: 30px;
-    border-radius: 10px;
-    /* width: 350px; */
-    text-align: center; /* Memusatkan teks secara horizontal */
-    }
+h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #ffffff;
+}
 
-.title {
-        margin-bottom: 50px;
-        text-align: center; /* Memusatkan teks secara horizontal */
-
-    }
-
-
-/* Input Fields */
-.form-control {
-    width: 90%;
+.alert {
     padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.inputBox {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.inputBox label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+    font-size: 16px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;   
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px
 }
 
-.form-control::placeholder {
-    color: #aaa; /* Warna teks placeholder */
-    font-style: italic; /* Membuat placeholder miring */
-}
-/* Button */
-.btn {
-    width: 95%;
+
+button {
+    width: 100%;
     padding: 10px;
-    font-size: 16px;
-    background: #89AAC7;
+    background-color: #2a3643;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s;
+    font-size: 16px;
 }
 
-.btn:hover {
-    background: 89AAC7
+button:hover {
+    background-color: #519eeb;
 }
 
-/* Options (Checkbox + Forgot Password) */
-.options {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-.forgot-password {
-    color: #1e88e5;
-    text-decoration: none;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-/* Register Link */
 .register-link {
     margin-top: 15px;
+    font-size: 14px;
 }
 
-.text-primary {
-    color: #1e88e5;
+.register-link a {
+    color: #eef6ff;
     text-decoration: none;
 }
 
-.text-primary:hover {
+.register-link a:hover {
     text-decoration: underline;
 }

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
     <link rel="stylesheet" href="{{ asset('assets/CSS/profile.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
+
 </head>
 <body>
-    <h1>Profil Pendengar</h1>
+    <h1>Profile</h1>
 
     <!-- Foto Profil -->
     <div class="profile-picture">

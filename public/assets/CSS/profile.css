@@ -3,6 +3,8 @@ body, h1, h2, p, div, form, input, button, img, audio {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+
 }
 
 /* Body Styling */
@@ -12,6 +14,8 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    background: linear-gradient(180deg,#FEF3E2,#FA4032);
+    max-height: 200vh;
 }
 
 /* Header */
@@ -31,7 +35,7 @@ h1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 5px solid #ccc;
     object-fit: cover;
 }
 
@@ -47,7 +51,7 @@ h1 {
 }
 
 .profile-picture button {
-    background-color: #4caf50;
+    background-color: #FAB12F;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -56,7 +60,7 @@ h1 {
 }
 
 .profile-picture button:hover {
-    background-color: #45a049;
+    background-color: #FEF3E2;
 }
 
 /* Profile Info */
@@ -76,7 +80,7 @@ h1 {
 }
 
 .liked-section h2 {
-    background-color: #4caf50;
+    background-color: #FAB12F;
     color: white;
     padding: 10px;
     text-align: center;

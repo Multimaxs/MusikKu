@@ -1,6 +1,5 @@
 /* Styling umum untuk body */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #2e2e2e;
@@ -8,7 +7,71 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Jockey One", sans-serif;
+    background: linear-gradient(180deg,#FEF3E2,#FA4032);
+    max-height: 200vh;
 }
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #FA812F; /* Warna merah (bisa diganti sesuai kebutuhan) */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    color: white;
+    text-align: center;
+}
+
+
+
+.card-content img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: flex;
+}
+
+.card-content h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card .card-content p{
+    font-size: 1rem;
+    margin:10px;
+    margin-left: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.card-button {
+    background-color: white;
+    color: #d9534f; /* Warna teks tombol sesuai warna background */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Jockey One', sans-serif; /* Font yang diinginkan */
+
+}
+
+/* Hover efek untuk tombol */
+.card-button:hover {
+    background-color: #b52c2c;
+    color: white;
+    
+}
+
+
 
 /* Header untuk nama artis */
 h1 {
@@ -81,17 +144,19 @@ button {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 0.9rem;
-    color: #ffffff;
-    background-color: #2e2e2e;
-    border: 2px solid #6fdbe7;
+    color: #050505;
+    background-color: #FEF3E2;
+    border: 2px solid #FA4032;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    font-family: 'Jockey One', sans-serif; /* Font yang diinginkan */
 }
 
 button:hover {
-    background-color: #6fdbe7;
-    color: #2e2e2e;
+    background-color: #FA4032;
+    color: #ffffff;
+
 }
 
 h1, h2, h3 {
@@ -132,7 +197,7 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #FEF3E2;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -194,7 +259,7 @@ ul li {
 }
 
 .dropdown-btn {
-    background-color: #007BFF;
+    background-color: #FAB12F;
     color: white;
     padding: 10px;
     font-size: 14px;
@@ -206,13 +271,13 @@ ul li {
 
 
 .dropdown-btn:hover {
-    background-color: #0056b3;
+    background-color: #FF9C73;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: rgb(121, 129, 79);
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -225,7 +290,7 @@ ul li {
     margin: 0;
     font-size: 14px;
     line-height: 1.5;
-    color: #0056b3;
+    color: #FAB12F;
 }
 
 .dropdown:hover .dropdown-content {

@@ -6,18 +6,24 @@
     <title>Detail Artis</title>
     <link rel="stylesheet" href="{{ asset('assets/CSS/detailartis.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
+
 </head>
 <body>
-    <h1>{{ $showartis->title }}</h1>
-    <img src="{{ Storage::url($showartis->thumbnail) }}" alt="{{ $showartis->title }}">
-    <p>{{ $showartis->content }}</p>
+    <div class="card">
+        <div class="card-content">
+            <h1>{{ $showartis->title }}</h1>
+            <img src="{{ Storage::url($showartis->thumbnail) }}" alt="{{ $showartis->title }}">
+            <p>{{ $showartis->content }}</p>
+            <form action="{{ route('profile.like.artist') }}" method="POST"> 
+                @csrf
+                <input type="hidden" name="artist_id" value="{{ $showartis->tipe_id }}">
+                <button type="submit">Sukai Artis</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Tombol Suka untuk Artis -->
-    <form action="{{ route('profile.like.artist') }}" method="POST">
-        @csrf
-        <input type="hidden" name="artist_id" value="{{ $showartis->tipe_id }}">
-        <button type="submit">Sukai Artis</button>
-    </form>
 
     <h2>Daftar Lagu:</h2>
     <div>
@@ -36,7 +42,7 @@
                         <button type="submit">Sukai Lagu</button>
                     </form>
                     
-                    <div class="dropdowns">
+                    <div class=" ms">
                         <div class="dropdown">
                             <button class="dropdown-btn">Deskripsi</button>
                             <div class="dropdown-content">
