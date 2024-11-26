@@ -4,17 +4,35 @@
         padding: 0;
         box-sizing: border-box;
         font-family: "Jockey One", sans-serif;
-        background: linear-gradient(180deg,#F0FAFB,#81C3FD);
     }
-    /* .container{
+    .container{
         height: 100vh;
         width: 100%;
-    
-    } */
-    .navbar {
-        background-color:#F0FAFB; 
-        padding: 10px 20px; 
+        padding: 20px;
+        background: linear-gradient(180deg,#F0FAFB,#5C4D29);   
     }
+
+    .navbar {
+        background-color: transparent !important; /* Paksa transparan */
+    box-shadow: none !important; /* Pastikan bayangan dihilangkan */
+    padding: 10px 20px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    /* .navbar {
+    background-color: transparent !important; 
+    box-shadow: none !important; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    } */
     
     .nav-container {
         display: flex;
@@ -34,58 +52,95 @@
         display: flex;
         margin: 0;
         padding: 0;
+        gap: 15px;
+        gap: 25px; /* Memberikan jarak antar item menu */
+        margin-left: 20px; /* Jarak antara logo dan menu */
+    
     }
     
- .nav-container ul li {
+ .nav-container ul li a {
   margin: 0 10px; /* Kurangi nilai */
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-size: 1.2rem; /* Memperbesar font */
+  font-weight: 600; /* Menebalkan teks */
+  transition: color 0.3s; /* Animasi hover */
+ }
+
+ .nav-container ul li a:hover {
+    color: white; /* Warna teks saat hover */
+    background-color: #5C4D29; /* Warna latar belakang saat hover */
+    padding: 10px 15px; /* Tambahkan ruang dalam saat hover */
+    border-radius: 5px; /* Sudut membulat */
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi yang halus */
+}
+
+        .nav-container .btn {
+    text-decoration: none;
+    margin: 0 10px; /* Kurangi nilai */
+    color: #333;
+    transition: color 0.3s; /* Animasi hover */
+            padding: 8px 15px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-container .btn:hover {
+            background-color: #5C4D29; /* Warna latar belakang saat hover */
+            color: white; /* Warna teks saat hover */
+            transform: scale(1.05); /* Membuat tombol sedikit membesar */
+            transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Efek transisi */
         }
         
-    
-    
-    .nav-container ul li a {
-        text-decoration: none;
-    }
+
     
     button {
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        padding: 10px 15px;
-        transition: background-color 0.3s, color 0.3s;
-        border-radius: 10px;
-        margin-right: 10px;
-        gap: 5px;
+        padding: 5px 10px; /* Mengatur ruang dalam tombol */
+        font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
+        height: 30px;      /* Mengatur tinggi tombol */
+        border-radius: 5px;
+        margin-left: 100px; /* Opsional: Membuat sudut membulat */
+        align-items: end;
     }
     
     button:hover {
         background-color: #333;
-        color: #F0FAFB;
+        /* color: #F0FAFB; */
     }
     
     .menu-item a {
         text-decoration: none;
-        color: white;
+        /* color: white; */
         font-size: 16px;
         padding: 15px 20px;
         transition: background-color 0.3s, color 0.3s;
         border-radius: 5px; 
     }
     
-    .menu-item.beranda a {
-       color: #5D4E4E;
+    .menu .beranda a {
+       color: black;
     }
     
-    .menu-item.musik a {
+    .menu.musik a {
         color: black;
     }
     
-    .menu-item.artis a {
+    
+    .menu .mood a{
         color: black;
+        
     }
     
+    .menu.artis a {
+        color: #5D4E4E;
+    }
+
 /* Container utama */
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
