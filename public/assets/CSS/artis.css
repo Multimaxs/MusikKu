@@ -1,22 +1,22 @@
 /* General body styling */
- body{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Jockey One", sans-serif;
     background: linear-gradient(180deg,#FEF3E2,#FA4032);
     max-height: 200vh;
+}
 
-
+.container{
+    height: 100vh;
+    width: 100%;
+    padding: 20px; 
     }
-    .container{
-        height: 100vh;
-        width: 100%;
-        padding: 20px; 
-    }
 
-    .navbar {
-        background-color: #fa3f3290; /* Paksa transparan */
+    /* Navbar */
+.navbar {
+    background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
     padding: 10px 20px;
     /* display: flex; */
@@ -28,14 +28,6 @@
         font-size: 2rem;
         font-weight: bold;
     }
-    /* .navbar {
-    background-color: transparent !important; 
-    box-shadow: none !important; 
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    } */
     
     .nav-container {
         display: flex;
@@ -61,15 +53,15 @@
     
     }
     
- .nav-container ul li a {
-  margin: 0 10px; /* Kurangi nilai */
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-  font-size: 1.2rem; /* Memperbesar font */
-  font-weight: 600; /* Menebalkan teks */
-  transition: color 0.3s; /* Animasi hover */
- }
+    .nav-container ul li a {
+        margin: 0 10px; /* Kurangi nilai */
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        font-size: 1.2rem; /* Memperbesar font */
+        font-weight: 600; /* Menebalkan teks */
+        transition: color 0.3s; /* Animasi hover */
+    }
 
  .nav-container ul li a:hover {
     color: white; /* Warna teks saat hover */
@@ -78,24 +70,24 @@
     transition: background-color 0.3s, color 0.3s; /* Efek transisi yang halus */
 }
 
-        .nav-container .btn {
+.nav-container .btn {
     text-decoration: none;
     margin: 0 10px; /* Kurangi nilai */
     color: #333;
     transition: color 0.3s; /* Animasi hover */
-            padding: 8px 15px;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        .nav-container .btn:hover {
-            background-color: #5C4D29; /* Warna latar belakang saat hover */
-            color: white; /* Warna teks saat hover */
-            transform: scale(1.05); 
-            transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Efek transisi */
-        }
+.nav-container .btn:hover {
+    background-color: #5C4D29; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+    transform: scale(1.05); 
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Efek transisi */
+}
         
 
     
@@ -110,7 +102,7 @@
     
     button:hover {
         background-color: #333;
-        /* color: #F0FAFB; */
+        /* color: #F0FAFB; 
     }
     
     .menu-item a {
@@ -173,7 +165,7 @@
 
 /* Kartu artis */
 .artist-card {
-    /* background-color: #fff; */
+    background-color: #fff; 
     border-radius: 0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -212,3 +204,5 @@
     gap: 20px; 
     justify-items: center; 
 }
+
+
