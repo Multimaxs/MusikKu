@@ -17,8 +17,7 @@ body{
 .navbar {
     background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
-    padding: 18px 20px;
-    /* display: flex; */
+    padding: 17.5px 20px;
     align-items: center;
     justify-content: space-between;
     }
@@ -48,7 +47,7 @@ body{
     padding: 0;
     gap: 15px;
     gap: 25px; /* Menggunakan satu gap */
-    margin-left: 200px; /* Jarak antara logo dan menu */
+    margin-left: 220px; /* Jarak antara logo dan menu */
 }
     
 .navbar-container .btn {
@@ -109,7 +108,7 @@ button:hover {
 
 /* Search bar styling */
 .search-bar {
-    \margin-top: 30px;
+    margin-top: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -160,8 +159,10 @@ button:hover {
 
 .genre-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Mengatur kolom responsif */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     gap: 20px; 
     justify-items: center; 
+    align-items: center; 
+    max-width: 1000px; /* Set a max-width for your grid */
+    margin: 0 auto; /* Center the grid container */
 }
-

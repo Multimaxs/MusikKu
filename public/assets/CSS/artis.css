@@ -17,7 +17,7 @@ body{
 .navbar {
     background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
-    padding: 19px 20px;
+    padding: 17.5px 20px;
     /* display: flex; */
     align-items: center;
     justify-content: space-between;
@@ -48,7 +48,7 @@ body{
     padding: 0;
     gap: 15px;
     gap: 25px; /* Menggunakan satu gap */
-    margin-left: 200px; /* Jarak antara logo dan menu */
+    margin-left: 220px; /* Jarak antara logo dan menu */
 }
     
 .navbar-container .btn {
@@ -123,14 +123,6 @@ button:hover {
     font-size: 16px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-/* Grid layout untuk kartu artis */
-/* .artist-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-    justify-items: center;
-} */
 
 /* Kartu artis */
 .artist-card {
