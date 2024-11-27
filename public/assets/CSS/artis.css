@@ -48,7 +48,7 @@ body{
     padding: 0;
     gap: 15px;
     gap: 25px; /* Menggunakan satu gap */
-    margin-left: 220px; /* Jarak antara logo dan menu */
+    margin-left: 219px; /* Jarak antara logo dan menu */
 }
     
 .navbar-container .btn {
