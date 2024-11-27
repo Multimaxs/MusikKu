@@ -11,33 +11,29 @@ body{
 .container{
     height: 100vh;
     width: 100%;
-    padding: 20px; 
-}
+    }
 
+    /* Navbar */
 .navbar {
-    background-color: #fa3f3290; /* Paksa transparan */
+    background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
-    padding: 10px 20px;
-    /* display: flex; */
+    padding: 18px 20px;
     align-items: center;
     justify-content: space-between;
-}
-
+    }
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
 }
-
-
+    
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px; /* Menambahkan jarak kiri-kanan pada nav-container */
 }
-
-
+    
 .nav-container h2 {
     color: black;
     margin: 0;
@@ -49,61 +45,63 @@ body{
     margin: 0;
     padding: 0;
     gap: 15px;
-    gap: 25px; /* Memberikan jarak antar item menu */
-    margin-left: 20px; /* Jarak antara logo dan menu */
+    gap: 25px; /* Menggunakan satu gap */
+    margin-left: 200px; /* Jarak antara logo dan menu */
 }
     
-    .nav-container .btn {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+.navbar-container .btn {
+    display: flex;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .nav-container ul li a {
     text-decoration: none;
     margin: 0 10px; /* Kurangi nilai */
-    color: #333;
+    color: #5D4E4E;
     font-size: 1.2rem; /* Memperbesar font */
     font-weight: 600; /* Menebalkan teks */
     transition: color 0.3s; /* Animasi hover */
 }
 
-
 button {
     padding: 5px 10px; /* Mengatur ruang dalam tombol */
     font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
     height: 30px;      /* Mengatur tinggi tombol */
+    border: none;
     border-radius: 5px;
     margin-left: 100px; /* Opsional: Membuat sudut membulat */
     align-items: end;
 }
-
+    
 button:hover {
     background-color: #333;
-    /* color: #F0FAFB; */
 }
-
-
+    
 .menu a {
     text-decoration: none;
-    /* color: black; */
     font-size: 16px;
     padding: 15px 20px;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px; 
 }
-
+    
 .menu .beranda a {
-   color: #5D4E4E;
-}
-
-.menu.musik a {
     color: black;
 }
-
-.menu .artis a {
+    
+.artis a {
+    color: #5D4E4E;
+}
+    
+.menu .mood a {
+    color: black;
+}
+    
+.menu .genre a {
     color: black;
 }
 
@@ -123,13 +121,14 @@ button:hover {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Kartu Mood */
+/* Kartu artis */
 .mood-card {
     background-color: #fff; 
     border-radius: 0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
     overflow: hidden;
+    transition: transform 0.2s ease-in-out;
     cursor: pointer;
     margin-bottom: 20 px;
     height: auto;
@@ -163,3 +162,4 @@ button:hover {
     gap: 20px; 
     justify-items: center; 
 }
+
