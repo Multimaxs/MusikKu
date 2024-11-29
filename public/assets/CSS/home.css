@@ -65,7 +65,7 @@ body{
     .nav-container ul li a {
         text-decoration: none;
         margin: 0 10px; /* Kurangi nilai */
-        color: #333;
+        color: black;
         font-size: 1.2rem; /* Memperbesar font */
         font-weight: 600; /* Menebalkan teks */
         transition: color 0.3s; /* Animasi hover */
@@ -100,11 +100,13 @@ button:hover {
    color: #5D4E4E;
 }
 
-.menu.musik a {
+.menu .artis a {
     color: black;
 }
-
-.menu .artis a {
+.menu .genre a {
+    color: black;
+}
+.menu .mood a {
     color: black;
 }
 

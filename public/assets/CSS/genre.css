@@ -94,7 +94,7 @@ button:hover {
     color: black;
 }
     
-.artis a {
+.genre a {
     color: #5D4E4E;
 }
     
@@ -102,7 +102,7 @@ button:hover {
     color: black;
 }
     
-.menu .genre a {
+.menu .artis a {
     color: black;
 }
 

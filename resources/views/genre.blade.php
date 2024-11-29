@@ -38,7 +38,16 @@
 
     <section class="genre-list">
         <div class="search-bar">
-            <input type="text" placeholder="Cari Genre" />
+            <form action="{{ url('/genre') }}" method="GET">
+                <input 
+                    type="text" 
+                    name="search" 
+                    placeholder="Cari Genre" 
+                    value="{{ request('search') }}" 
+                    class="search-input"
+                />
+                <button type="submit" class="search-button">Cari</button>
+            </form>
         </div>
         <div class="container">
             @if ($genre->isEmpty())

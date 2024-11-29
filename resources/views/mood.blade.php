@@ -38,7 +38,16 @@
 
     <section class="mood-list">
         <div class="search-bar">
-            <input type="text" placeholder="Cari Mood" />
+            <form action="{{ url('/mood') }}" method="GET">
+                <input 
+                    type="text" 
+                    name="search" 
+                    placeholder="Cari Mood" 
+                    value="{{ request('search') }}" 
+                    class="search-input"
+                />
+                <button type="submit" class="search-button">Cari</button>
+            </form>
         </div>
         <div class="container">
             @if ($mood->isEmpty())
