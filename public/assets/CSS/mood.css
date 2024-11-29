@@ -9,8 +9,11 @@ body{
 }
 
 .container{
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
     height: 100vh;
-    width: 100%;
+    align-items: center;
     }
 
     /* Navbar */
@@ -141,8 +144,9 @@ button:hover {
 /* Gambar dalam kartu */
 .mood-card .mood-image img {
     width: 100%;
-    height: 150px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    border-radius: 5px;
     display: block;
     border-bottom: 2px solid #ddd;
 }

@@ -41,7 +41,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="container">
+    <div class="hero-container">
     <div class="hero-section">
     <!-- Konten Teks -->
     <div class="hero-content">
@@ -58,6 +58,62 @@
     </div>
 </div>
 
+</div>
+
+    <!-- Artis Section -->
+    <div class="artis-container">
+        <h2>Artis</h2>
+        <a href="{{ url('/artis') }}" class="more">Lihat lebih banyak</a>
+        <div class="grid">
+            @foreach ($artis as $item)
+                <div class="card">
+                    <a href="{{ url('/artis/' . $item->tipe_id) }}">
+                    <img src="{{ Storage::url($item->thumbnail) }}" alt="{{ $item->title }}">
+                    </a>
+                    <div class="label">{{ $item->title }}</div>
+                </div>
+            @endforeach
+        </div>
     </div>
+
+    <!-- Genre Section -->
+    <div class="genre-container">
+        <h2>Genre</h2>
+        <a href="{{ url('/genre') }}" class="more">Lihat lebih banyak</a>
+        <div class="grid">
+            @foreach ($genre as $item)
+                <div class="card">
+                    <a href="{{ url('/genre/' . $item->tipe_id) }}">
+                    <img src="{{ Storage::url($item->thumbnail) }}" alt="{{ $item->title }}">
+                    </a>
+                    <div class="label">{{ $item->title }}</div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+    <!-- Mood Section -->
+    <div class="mood-container">
+        <h2>Mood</h2>
+        <a href="{{ url('/mood') }}" class="more">Lihat lebih banyak</a>
+        <div class="grid">
+            @foreach ($mood as $item)
+                <div class="card">
+                    <a href="{{ url('/mood/' . $item->tipe_id) }}">
+                    <img src="{{ Storage::url($item->thumbnail) }}" alt="{{ $item->title }}">
+                    </a>
+                    <div class="label">{{ $item->title }}</div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+    <!-- footer start -->
+    <footer>
+      <div class="credit">
+        <p>Created by Kelompok 7. | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- footer end -->
 </body>
 </html>
