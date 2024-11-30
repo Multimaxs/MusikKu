@@ -1,17 +1,18 @@
 body {
-    font-family: "Jockey One", sans-serif;
-    background: linear-gradient(180deg,#F0FAFB,#5C4D29);
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     place-items: center;
     height: 100vh;
+    font-family: "Jockey One", sans-serif;
+    background: linear-gradient(180deg,#FEF3E2,#FA4032);
+    max-height: 200vh;
 }
 
+
 .box {
-    background-color: #627584 ;
+    background-color: #ad6762;
     padding: 80px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(157, 19, 237, 0.1);
@@ -19,14 +20,17 @@ body {
     text-align: center;
     margin-left: 480px;
     position: relative;
+    font-family: "Jockey One", sans-serif;
+
 }
 
 
 h1 {
     margin-bottom: 30px;
     font-size: 30px;
-    color: #ffffff;
+    color: #ecff1d;
 }
+
 
 .alert {
     padding: 10px;
@@ -68,7 +72,7 @@ h1 {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #2a3643;
+    background-color: #FA4032;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -77,7 +81,8 @@ button {
 }
 
 button:hover {
-    background-color: #519eeb;
+    background-color: #ecff1d;
+    color: #333;
 }
 
 .register-link {
@@ -86,6 +91,10 @@ button:hover {
 }
 
 .register-link a {
+    color: #ecff1d;
+    text-decoration: none;
+}
+.register-link p {
     color: #eef6ff;
     text-decoration: none;
 }
@@ -93,3 +102,4 @@ button:hover {
 .register-link a:hover {
     text-decoration: underline;
 }
+

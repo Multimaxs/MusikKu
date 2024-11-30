@@ -54,6 +54,8 @@ body{
 .navbar-container .btn {
     display: flex;
     padding: 8px 15px;
+    font-family: "Jockey One", sans-serif;
+
     font-size: 0.9rem;
     border: none;
     border-radius: 5px;
@@ -75,12 +77,15 @@ button {
     height: 30px;      /* Mengatur tinggi tombol */
     border: none;
     border-radius: 5px;
-    margin-left: 100px; /* Opsional: Membuat sudut membulat */
+    margin-left: 20px; /* Opsional: Membuat sudut membulat */
     align-items: end;
+    font-family: "Jockey One", sans-serif;
+
 }
     
 button:hover {
-    background-color: #333;
+    background-color: #FBD288;
+    color: #FF4545;
 }
     
 .menu a {

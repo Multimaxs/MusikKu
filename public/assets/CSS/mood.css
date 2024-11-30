@@ -61,24 +61,25 @@ body{
 .nav-container ul li a {
     text-decoration: none;
     margin: 0 10px; /* Kurangi nilai */
-    color: #5D4E4E;
+    /* color: #5D4E4E; */
     font-size: 1.2rem; /* Memperbesar font */
     font-weight: 600; /* Menebalkan teks */
     transition: color 0.3s; /* Animasi hover */
 }
 
 button {
-    padding: 5px 10px; /* Mengatur ruang dalam tombol */
-    font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
-    height: 30px;      /* Mengatur tinggi tombol */
+    padding: 5px 10px; 
+    font-size: 12px;  
+    height: 30px;      
     border: none;
     border-radius: 5px;
-    margin-left: 100px; /* Opsional: Membuat sudut membulat */
+    margin-left: 100px; 
     align-items: end;
 }
     
 button:hover {
-    background-color: #333;
+    background-color: #FBD288;
+    color: #FF4545;
 }
     
 .menu a {
@@ -94,11 +95,11 @@ button:hover {
 }
     
 .artis a {
-    color: #5D4E4E;
+    color: black;
 }
     
 .menu .mood a {
-    color: black;
+    color: #5D4E4E;
 }
     
 .menu .genre a {
