@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Genre</title>
-    <link rel="stylesheet" href="{{ asset('assets/CSS/detailartis.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/CSS/detailgenre.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
+
 </head>
 <body>
-    <h1>{{ $showgenre->title }}</h1>
-    <img src="{{ Storage::url($showgenre->thumbnail) }}" alt="{{ $showgenre->title }}">
-    <p>{!! strip_tags($showgenre->content) !!}</p>
-
-    <form action="{{ route('profile.like.genre') }}" method="POST">
-        @csrf
-        <input type="hidden" name="genre_id" value="{{ $showgenre->tipe_id }}">
-        <button type="submit">Sukai Genre</button>
-    </form>
+    <div class="card">
+        <div class="card-content">
+            <h1>Genre yang sedang kamu buka</h1>
+            <img src="{{ Storage::url($showgenre->thumbnail) }}" alt="{{ $showgenre->title }}">
+            <p>{!! strip_tags($showgenre->content) !!}</p>
+        
+            <form action="{{ route('profile.like.genre') }}" method="POST">
+                @csrf
+                <input type="hidden" name="genre_id" value="{{ $showgenre->tipe_id }}">
+                <button type="submit">Sukai Genre</button>
+            </form>
+        </div>
+    </div>
 
     <h2>Daftar Lagu:</h2>
     <div>

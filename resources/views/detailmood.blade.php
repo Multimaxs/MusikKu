@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Mood</title>
-    <link rel="stylesheet" href="{{ asset('assets/CSS/detailartis.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/CSS/detailmood.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
 </head>
 <body>
-    <h1>{{ $showmood->title }}</h1>
-    <img src="{{ Storage::url($showmood->thumbnail) }}" alt="{{ $showmood->title }}">
-    <p>{!! strip_tags($showmood->content) !!}</p>
-
-    <form action="{{ route('profile.like.mood') }}" method="POST">
-        @csrf
-        <input type="hidden" name="mood_id" value="{{ $showmood->tipe_id }}">
-        <button type="submit">Sukai mood</button>
-    </form>
+    <div class="card">
+        <div class="card-content">
+            <h1>Suasana hati kamu</h1>
+            <img src="{{ Storage::url($showmood->thumbnail) }}" alt="{{ $showmood->title }}">
+            <p>{!! strip_tags($showmood->content) !!}</p>
+        
+            <form action="{{ route('profile.like.mood') }}" method="POST">
+                @csrf
+                <input type="hidden" name="mood_id" value="{{ $showmood->tipe_id }}">
+                <button type="submit">Sukai mood</button>
+            </form>
+        </div>
+    </div>
 
     <h2>Daftar Lagu:</h2>
     <div>

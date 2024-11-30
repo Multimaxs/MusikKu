@@ -10,35 +10,6 @@
 
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar">
-        <div class="nav-container">
-            <h2 class="logo">MusikKu</h2>
-            <ul class="menu">
-                <li class="beranda"><a href="{{ url('/') }}">Beranda</a></li>
-                <li class="artis"><a href="{{ url('/artis') }}">Artis</a></li>
-                <li class="mood"><a href="{{ url('/mood') }}">Mood</a></li>
-                <li class="genre"><a href="{{ url('/genre') }}">Genre</a></li>
-            </ul>
-
-            @php
-                $isAuthenticated = Auth::guard('pendengar')->check();
-            @endphp
-
-            @if($isAuthenticated)
-                <form action="{{ route('logout') }}" method="POST" style="display: inline;">
-                @csrf
-                    <button type="submit" class="btn btn-logout">Log Out</button>
-                </form>
-            @else
-                <button type="button" onclick="window.location.href='/register'">Daftar</button>
-                <button type="button" onclick="window.location.href='/login'">Masuk</button>
-            @endif
-
-        </div>
-    </nav>
-  <!-- Navigation Bar -->
-   
     <div class="card">
         <div class="card-content">
             <h1>{{ $showartis->title }}</h1>
@@ -169,5 +140,6 @@
             .catch(error => console.error('Error:', error));
         }
     </script>
+    
 </body>
 </html>
