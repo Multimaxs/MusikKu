@@ -159,6 +159,8 @@ button:hover {
     border: none;
     font-size: 16px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Jockey One", sans-serif;
+
 }
 
 /* Kartu artis */
@@ -205,4 +207,16 @@ button:hover {
     align-items: center; 
     max-width: 1000px; /* Set a max-width for your grid */
     margin: 0 40px; /* Center the grid container */
+}
+
+footer {
+    background-color: #FA4032;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin-top: 10rem;
+}
+
+footer .credit{
+    font-size: 0.7rem;
+
 }

@@ -132,6 +132,7 @@ button:hover {
     border: none;
     font-size: 16px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Jockey One", sans-serif;
 }
 
 
@@ -179,4 +180,15 @@ button:hover {
     margin: 0 40px;
 }
 
+footer {
+    background-color: #FA4032;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin-top: 300px;
+}
+
+footer .credit{
+    font-size: 0.7rem;
+
+}
 

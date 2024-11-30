@@ -144,6 +144,12 @@
             .catch(error => console.error('Error:', error));
         }
 </script>
-
+    <!-- footer start -->
+    <footer>
+      <div class="credit">
+        <p>Created by Kelompok 7. | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- footer end -->
 </body>
 </html>
