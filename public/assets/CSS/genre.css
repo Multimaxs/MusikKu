@@ -14,12 +14,18 @@ body{
     height: 100vh;
     align-items: center;
     }
+
 .navbar {
     background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
     padding: 17.9px 20px;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
     }
 
     .logo {
@@ -77,27 +83,16 @@ button {
     height: 30px;      /* Mengatur tinggi tombol */
     border: none;
     border-radius: 5px;
-    margin-left: 100px; /* Opsional: Membuat sudut membulat */
+    margin-left: 20px; /* Opsional: Membuat sudut membulat */
     align-items: end;
     font-family: "Jockey One", sans-serif;
 
 }
     
-
     .btn-container {
         display: flex;
 
     }
-
-    button {
-        padding: 5px 10px;
-        font-size: 12px;
-        height: 30px;
-        border-radius: 5px;
-        margin-left: 1.5rem;
-        align-items: end;
-    }
-
 
 button:hover {
     background-color: #FBD288;
@@ -124,27 +119,10 @@ button:hover {
     color: #5D4E4E ;
 }
 
-.menu .mood a{
+.mood a{
     color: black;
 }
 
-.menu .genre a {
-    color: #5D4E4E;
-}
-
-    
-.menu .mood a {
-    color: black;
-}
-    
-.menu .genre a {
-    color: #5D4E4E;
-}
-
-
-.menu .artis a {
-    color: black;
-}
 
 .search-bar {
     margin-top: 30px;
@@ -201,11 +179,9 @@ button:hover {
 
 .genre-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Mengatur kolom responsif */
     gap: 20px; 
     justify-items: center; 
-    align-items: center; 
-    max-width: 1000px; /* Set a max-width for your grid */
     margin: 0 40px; /* Center the grid container */
 }
 

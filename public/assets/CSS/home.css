@@ -1,11 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-}
+
 
 body {
     margin: 0;
@@ -29,7 +22,7 @@ body {
     background-color: #fa3f3290; /* Paksa transparan */
     border-bottom: 1px solid var(#fa3f3290);
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
-    padding: 10px 20px;
+    padding: 17.9px 20px;
     position: fixed;
     align-items: center;
     justify-content: space-between;
@@ -252,3 +245,143 @@ footer {
         font-size: 0.7rem;
 
     }
+
+
+/* Media Query untuk layar kecil (Mobile Devices) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        background-color: #fa3f3290; /* Paksa transparan */
+        border-bottom: 1px solid var(#fa3f3290);
+        box-shadow: none !important; /* Pastikan bayangan dihilangkan */
+        padding: 10px 20px;
+        position: fixed; /* Menggunakan fixed agar navbar tetap di atas */
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    .nav-container {
+        flex-direction: row; /* Pastikan menu tetap dalam satu baris */
+        padding: 10px 20px;
+        justify-content: space-between; /* Menjaga jarak antar elemen */
+        flex-wrap: nowrap; /* Mencegah elemen membungkus ke baris berikutnya */
+    }
+
+    .menu {
+        flex-direction: row; /* Menu tetap horizontal */
+        align-items: center; /* Rata tengah secara vertikal */
+        gap: 15px; /* Jarak antar menu */
+    }
+
+    .hero-section {
+        flex-direction: column; /* Teks dan gambar ditumpuk */
+        text-align: center; /* Teks di tengah */
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .hero-content {
+        max-width: 100%; /* Teks mengambil seluruh lebar */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Ukuran font lebih kecil */
+    }
+
+    .hero-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 90%; /* Gambar lebih kecil */
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Ukuran kartu lebih kecil */
+        gap: 15px;
+    }
+
+    .card img {
+        aspect-ratio: 1 / 1; /* Gambar tetap proporsional */
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Media Query untuk layar sangat kecil (Extra Small Devices) */
+@media screen and (max-width: 480px) {
+    .nav-container ul {
+        padding: 0;
+        gap: 10px; /* Jarak antar menu lebih kecil */
+    }
+
+    button {
+        font-size: 10px;
+        padding: 5px 8px;
+        height: 25px; /* Tombol lebih kecil */
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+
+    .hero-image img {
+        width: 100%; /* Gambar memenuhi layar */
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ukuran kartu lebih kecil */
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+/* Media Query untuk layar sedang (Tablet Devices) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-container {
+        padding: 15px 30px;
+    }
+
+    .hero-section {
+        padding: 30px 40px;
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Sedikit lebih kecil dibanding desktop */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-image img {
+        width: 70%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Lebar kartu sesuai tablet */
+        gap: 20px;
+    }
+}

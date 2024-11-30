@@ -6,11 +6,15 @@ body{
     font-family: "Jockey One", sans-serif;
     background: linear-gradient(180deg,#FEF3E2,#FA4032);
     max-height: 200vh;
-    height: 100vh;
-    align-items: center;
 }
 
-
+.container{
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    height: 100vh;
+    align-items: center;
+    }
     /* Navbar */
 .navbar {
     background-color: #fa3f3290; 
@@ -66,7 +70,7 @@ body{
 .nav-container ul li a {
     text-decoration: none;
     margin: 0 10px; /* Kurangi nilai */
-    color: #5D4E4E;
+    /* color: #5D4E4E; */
     font-size: 1.2rem; /* Memperbesar font */
     font-weight: 600; /* Menebalkan teks */
     transition: color 0.3s; /* Animasi hover */
@@ -109,14 +113,15 @@ button:hover {
 .artis a {
     color: #5D4E4E;
 }
-    
-.menu .mood a {
+
+.genre a {
+    color: black;
+}
+
+.mood a {
     color: black;
 }
     
-.menu .genre a {
-    color: black;
-}
 
 /* Search bar styling */
 .search-bar {
