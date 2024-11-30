@@ -72,16 +72,20 @@ body{
     transition: color 0.3s; /* Animasi hover */
 }
 
-button {
-    padding: 5px 10px; /* Mengatur ruang dalam tombol */
-    font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
-    height: 30px;      /* Mengatur tinggi tombol */
-    border: none;
-    border-radius: 5px;
-    margin-left: 100px; /* Opsional: Membuat sudut membulat */
-    align-items: end;
-}
-    
+    .btn-container {
+        display: flex;
+
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 12px;
+        height: 30px;
+        border-radius: 5px;
+        margin-left: 1.5rem;
+        align-items: end;
+    }
+
 button:hover {
     background-color: #333;
 }

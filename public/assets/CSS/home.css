@@ -94,19 +94,22 @@ html {
         transition: color 0.3s; /* Animasi hover */
     }
 
+    .btn-container {
+        display: flex;
+
+    }
 
     button {
-        padding: 5px 10px; /* Mengatur ruang dalam tombol */
-        font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
-        height: 30px;      /* Mengatur tinggi tombol */
+        padding: 5px 10px;
+        font-size: 12px;
+        height: 30px;
         border-radius: 5px;
-        margin-left: 100px; /* Opsional: Membuat sudut membulat */
+        margin-left: 1.5rem;
         align-items: end;
     }
 
 button:hover {
     background-color: #333;
-    /* color: #F0FAFB; */
 }
 
 
