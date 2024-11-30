@@ -97,21 +97,19 @@ button:hover {
     color: black;
 }
     
-<<<<<<< HEAD
 .artis a {
     color: black;
 }
     
 .menu .mood a {
     color: #5D4E4E;
-=======
+}
 .mood a {
     color: #5D4E4E;
 }
     
 .menu .artis a {
     color: black;
->>>>>>> edc00da0c0ab168e4199b9a35c57a8022a38516f
 }
     
 .menu .genre a {
