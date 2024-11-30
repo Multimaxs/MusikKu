@@ -1,3 +1,4 @@
+/* General body styling */
 body{
     margin: 0;
     padding: 0;
@@ -14,27 +15,28 @@ body{
     height: 100vh;
     align-items: center;
     }
+
+    /* Navbar */
 .navbar {
     background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
-    padding: 17.9px 20px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
     }
 
-    .logo {
-        font-size: 2rem;
-        font-weight: bold;
-    }
-        
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 40px; /* Menambahkan jarak kiri-kanan pada nav-container */
-    }
-
-        
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+    
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px; /* Menambahkan jarak kiri-kanan pada nav-container */
+}
+    
 .nav-container h2 {
     color: black;
     margin: 0;
@@ -47,7 +49,7 @@ body{
     padding: 0;
     gap: 15px;
     gap: 25px; /* Menggunakan satu gap */
-    margin-left: 219px; /* Jarak antara logo dan menu */
+    margin-left: 23px; /* Jarak antara logo dan menu */
 }
     
 .navbar-container .btn {
@@ -71,39 +73,28 @@ body{
 }
 
 
-button {
-    padding: 5px 10px; /* Mengatur ruang dalam tombol */
-    font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
-    height: 30px;      /* Mengatur tinggi tombol */
-    border: none;
-    border-radius: 5px;
-    margin-left: 100px; /* Opsional: Membuat sudut membulat */
-    align-items: end;
-    font-family: "Jockey One", sans-serif;
-
-}
-    
-
     .btn-container {
         display: flex;
 
     }
 
     button {
-        padding: 5px 10px;
-        font-size: 12px;
+        padding: 0px 15px;
+        font-size: 15px;
         height: 30px;
         border-radius: 5px;
         margin-left: 1.5rem;
         align-items: end;
-    }
+    font-family: "Jockey One", sans-serif;
+    border: none;
 
+    }
 
 button:hover {
     background-color: #FBD288;
     color: #FF4545;
 }
-    
+
 .menu a {
     text-decoration: none;
     font-size: 16px;
@@ -212,7 +203,7 @@ button:hover {
 footer {
     background-color: #FA4032;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1px;
     margin-top: 10rem;
 }
 

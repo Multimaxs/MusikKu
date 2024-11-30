@@ -248,6 +248,18 @@ ul li {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    gap: 20px;
+}
+
+.song-header h3{
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.somg-header button{
+    min-width: 100px;
+    text-align: center;
+    margin-left: 10px;
 }
 
 /* Dropdown */
@@ -319,3 +331,4 @@ ul li {
         font-size: 1.2rem;
     }
 }
+

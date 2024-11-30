@@ -20,7 +20,7 @@ body{
 .navbar {
     background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
-    padding: 17.9px 20px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
     }
@@ -34,7 +34,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px; /* Menambahkan jarak kiri-kanan pada nav-container */
+    padding: 0 50px; /* Menambahkan jarak kiri-kanan pada nav-container */
 }
     
 .nav-container h2 {
@@ -49,7 +49,7 @@ body{
     padding: 0;
     gap: 15px;
     gap: 25px; /* Menggunakan satu gap */
-    margin-left: 219px; /* Jarak antara logo dan menu */
+    margin-left: 23px; /* Jarak antara logo dan menu */
 }
     
 .navbar-container .btn {
@@ -79,8 +79,8 @@ body{
     }
 
     button {
-        padding: 5px 10px;
-        font-size: 12px;
+        padding: 0px 15px;
+        font-size: 15px;
         height: 30px;
         border-radius: 5px;
         margin-left: 1.5rem;
@@ -196,7 +196,7 @@ button:hover {
 footer {
     background-color: #FA4032;
     text-align: center;
-    padding: 1rem 3rem;
+    padding: 1px;
     margin-top: 10rem;
 }
 
