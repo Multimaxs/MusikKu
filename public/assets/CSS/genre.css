@@ -79,6 +79,22 @@ button {
     align-items: end;
 }
     
+
+    .btn-container {
+        display: flex;
+
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 12px;
+        height: 30px;
+        border-radius: 5px;
+        margin-left: 1.5rem;
+        align-items: end;
+    }
+
+
 button:hover {
     background-color: #FBD288;
     color: #FF4545;
@@ -111,6 +127,17 @@ button:hover {
 .menu .genre a {
     color: #5D4E4E;
 }
+
+    
+.menu .mood a {
+    color: black;
+}
+    
+.menu .genre a {
+    color: #5D4E4E;
+}
+
+
 .menu .artis a {
     color: black;
 }

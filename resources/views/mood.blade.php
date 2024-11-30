@@ -19,19 +19,24 @@
             <li class="genre"><a href="{{ url('/genre') }}">Genre</a></li>
         </ul>
 
-        @php
-            $isAuthenticated = Auth::guard('pendengar')->check();
-        @endphp
-
-        @if($isAuthenticated)
-            <form action="{{ route('logout') }}" method="POST" style="display: inline;">
-                @csrf
-                <button type="submit" class="btn btn-logout">Log Out</button>
-            </form>
-        @else
-            <button type="button" onclick="window.location.href='/register'">Daftar</button>
-            <button type="button" onclick="window.location.href='/login'">Masuk</button>
-        @endif
+            @php
+                $isAuthenticated = Auth::guard('pendengar')->check();
+            @endphp
+            <div class="btn-container">
+            @if ($isAuthenticated)
+                <form action="{{ route('profile') }}" style="display: inline;">
+                    @csrf
+                    <button type="submit" class="btn btn-logout">Profil</button>
+                </form>
+                <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                    @csrf
+                    <button type="submit" class="btn btn-logout">Log Out</button>
+                </form>
+            @else
+                <button type="button" class="btn btn-register" onclick="window.location.href='{{ route('register') }}'">Daftar</button>
+                <button type="button" class="btn btn-login" onclick="window.location.href='{{ route('login') }}'">Masuk</button>
+            @endif
+            </div>
     </div>
 </nav>
 <!-- Navigation Bar -->
