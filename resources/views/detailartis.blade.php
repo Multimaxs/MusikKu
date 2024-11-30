@@ -10,7 +10,6 @@
 
 </head>
 <body>
-
 <!-- Navigation Bar -->
 <nav class="navbar">
         <div class="nav-container">

@@ -45,7 +45,7 @@
     <div class="hero-section">
     <!-- Konten Teks -->
     <div class="hero-content">
-        <h3>Selamat Datang di MusikKu!</h3>
+        <h3>Selamat Datang <span class="highligt">di Musikku!</span></h3>
         <h1>Temukan dunia musik yang tak terbatas!</h1>
         <p>
         Dengan katalog musik kami, Anda dapat menjelajahi ribuan lagu, album, dan artis dari berbagai genre dan era. Apakah Anda sedang mencari hits terbaru, lagu-lagu legendaris, atau ingin menemukan musik baru sesuai selera Anda, kami punya semuanya!
