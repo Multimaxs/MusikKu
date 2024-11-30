@@ -20,7 +20,7 @@ body{
 .navbar {
     background-color: #fa3f3290; 
     box-shadow: none !important; /* Pastikan bayangan dihilangkan */
-    padding: 10px;
+    padding: 18px;
     align-items: center;
     justify-content: space-between;
     }
@@ -34,7 +34,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px; /* Menambahkan jarak kiri-kanan pada nav-container */
+    padding: 0 42px; /* Menambahkan jarak kiri-kanan pada nav-container */
 }
     
 .nav-container h2 {
