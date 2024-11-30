@@ -57,6 +57,8 @@ body{
 .navbar-container .btn {
     display: flex;
     padding: 8px 15px;
+    font-family: "Jockey One", sans-serif;
+
     font-size: 0.9rem;
     border: none;
     border-radius: 5px;
@@ -77,17 +79,20 @@ body{
 
     }
 
-    button {
-        padding: 5px 10px;
-        font-size: 12px;
-        height: 30px;
-        border-radius: 5px;
-        margin-left: 1.5rem;
-        align-items: end;
-    }
-
+button {
+    padding: 5px 10px; /* Mengatur ruang dalam tombol */
+    font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
+    height: 30px;      /* Mengatur tinggi tombol */
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px; /* Opsional: Membuat sudut membulat */
+    align-items: end;
+    font-family: "Jockey One", sans-serif;
+}
+    
 button:hover {
-    background-color: #333;
+    background-color: #FBD288;
+    color: #FF4545;
 }
     
 .menu a {

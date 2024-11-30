@@ -17,18 +17,12 @@ body {
     background-blend-mode: multiply;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 .hero-container{
     margin-top: 15vh;
     margin-left: 10vh;
     margin-right: 10vh;
-    height: 100vh;
     align-items: center;
-    
-
 }
 
 .navbar {
@@ -76,15 +70,24 @@ html {
 }
     
     .nav-container .btn {
-        display: flex;
-        padding: 8px 15px;
+    display: flex;
+    padding: 8px 15px;
+    font-family: "Jockey One", sans-serif;
         font-size: 0.9rem;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
-    
 
+    .btn-container {
+        display: flex;
+    }
+
+    button:hover {
+        background-color: #FBD288;
+        color: #FF4545;
+    }
+    
     .nav-container ul li a {
         text-decoration: none;
         margin: 0 10px; /* Kurangi nilai */
@@ -94,24 +97,14 @@ html {
         transition: color 0.3s; /* Animasi hover */
     }
 
-    .btn-container {
-        display: flex;
-
-    }
-
     button {
-        padding: 5px 10px;
-        font-size: 12px;
-        height: 30px;
+        padding: 5px 10px; /* Mengatur ruang dalam tombol */
+        font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
+        height: 30px;      /* Mengatur tinggi tombol */
         border-radius: 5px;
         margin-left: 1.5rem;
         align-items: end;
     }
-
-button:hover {
-    background-color: #333;
-}
-
 
 .menu a {
     text-decoration: none;
