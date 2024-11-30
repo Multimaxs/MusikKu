@@ -42,7 +42,7 @@
     </nav>
   <!-- Navigation Bar -->
 
-    <section class="container">
+    <section class="artis-list">
         <div class="search-bar">
             <!-- Form pencarian -->
             <form action="{{ url('/artis') }}" method="GET">
@@ -56,7 +56,7 @@
                 <button type="submit" class="search-button">Cari</button>
             </form>
         </div>
-        <div class="content">
+        <div class="container">
             @if ($artis->isEmpty())
                 <div class="warning" role="alert">
                     Data tidak ditemukan
