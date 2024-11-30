@@ -59,6 +59,8 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Jockey One", sans-serif;
+
 }
 
 .nav-container ul li a {
@@ -83,6 +85,8 @@ body{
         border-radius: 5px;
         margin-left: 1.5rem;
         align-items: end;
+    font-family: "Jockey One", sans-serif;
+
     }
 
 button:hover {

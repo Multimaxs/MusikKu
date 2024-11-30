@@ -57,6 +57,8 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Jockey One", sans-serif;
+
 }
 
 .nav-container ul li a {
@@ -77,6 +79,8 @@ button {
     border-radius: 5px;
     margin-left: 100px; /* Opsional: Membuat sudut membulat */
     align-items: end;
+    font-family: "Jockey One", sans-serif;
+
 }
     
 

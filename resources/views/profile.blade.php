@@ -46,7 +46,7 @@
     </div>
 
     <div class="liked-section">
-        <h2>Genre yang Disukai</h2>
+        <h2>genre yang Disukai</h2>
         @forelse ($likedGenres as $genre)
             <div class="artist-item">
                 <img src="{{ Storage::url($genre->section->thumbnail) }}">
@@ -58,7 +58,7 @@
     </div>
 
     <div class="liked-section">
-        <h2>Genre yang Disukai</h2>
+        <h2>mood yang Disukai</h2>
         @forelse ($likedMoods as $mood)
             <div class="artist-item">
                 <img src="{{ Storage::url($mood->section->thumbnail) }}">
