@@ -148,6 +148,7 @@ button:hover {
     cursor: pointer;
     margin-bottom: 20 px;
     height: auto;
+    font-family: "Jockey One", sans-serif;
 }
 
 .mood-card:hover {
