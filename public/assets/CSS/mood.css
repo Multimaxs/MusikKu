@@ -167,7 +167,7 @@ button:hover {
 /* Gambar dalam kartu */
 .mood-card .mood-image img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 5px;
     display: block;
@@ -187,6 +187,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     gap: 20px; 
+    padding-left: 50px;
     justify-items: center; 
     align-items: center; 
     max-width: 1000px; /* Set a max-width for your grid */
