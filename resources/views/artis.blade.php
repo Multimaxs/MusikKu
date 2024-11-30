@@ -39,7 +39,17 @@
 
     <section class="container">
         <div class="search-bar">
-            <input type="text" placeholder="Cari Artis" />
+            <!-- Form pencarian -->
+            <form action="{{ url('/artis') }}" method="GET">
+                <input 
+                    type="text" 
+                    name="search" 
+                    placeholder="Cari Artis" 
+                    value="{{ request('search') }}" 
+                    class="search-input"
+                />
+                <button type="submit" class="search-button">Cari</button>
+            </form>
         </div>
         <div class="content">
             @if ($artis->isEmpty())

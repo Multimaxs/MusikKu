@@ -9,8 +9,11 @@ body{
 }
 
 .container{
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
     height: 100vh;
-    width: 100%;
+    align-items: center;
     }
 
     /* Navbar */
@@ -94,12 +97,21 @@ button:hover {
     color: black;
 }
     
+<<<<<<< HEAD
 .artis a {
     color: black;
 }
     
 .menu .mood a {
     color: #5D4E4E;
+=======
+.mood a {
+    color: #5D4E4E;
+}
+    
+.menu .artis a {
+    color: black;
+>>>>>>> edc00da0c0ab168e4199b9a35c57a8022a38516f
 }
     
 .menu .genre a {
@@ -142,8 +154,9 @@ button:hover {
 /* Gambar dalam kartu */
 .mood-card .mood-image img {
     width: 100%;
-    height: 150px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    border-radius: 5px;
     display: block;
     border-bottom: 2px solid #ddd;
 }

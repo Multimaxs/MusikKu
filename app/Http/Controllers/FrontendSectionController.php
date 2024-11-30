@@ -8,9 +8,29 @@ use Illuminate\Http\Request;
 
 class FrontendSectionController extends Controller
 {
-    public function artis()
+
+
+    public function home()
     {
-        $artis = Section::where('post_as', 'ARTIS')->get();
+    $artis = Section::where('post_as', 'ARTIS')->limit(8)->get();
+    $mood = Section::where('post_as', 'MOOD')->limit(8)->get();
+    $genre = Section::where('post_as', 'GENRE')->limit(8)->get();
+
+    return view('home', compact('artis', 'mood', 'genre'));
+    }
+
+    public function artis(Request $request)
+    {
+        // Ambil parameter pencarian
+        $search = $request->input('search');
+
+        // Filter artis berdasarkan nama jika ada pencarian
+        $artis = Section::where('post_as', 'ARTIS')
+            ->when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%' . $search . '%');
+            })
+            ->get();
+
         return view('artis', compact('artis'));
     }
 
@@ -21,9 +41,15 @@ class FrontendSectionController extends Controller
         return view('detailartis', compact('showartis', 'songs'));
     }
 
-    public function mood()
+    public function mood(Request $request)
     {
-        $mood = Section::where('post_as', 'MOOD')->get();
+        $search = $request->input('search');
+        $mood = Section::where('post_as', 'MOOD')
+            ->when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%' . $search . '%');
+            })
+            ->get();
+
         return view('mood', compact('mood'));
     }
 
@@ -34,9 +60,15 @@ class FrontendSectionController extends Controller
         return view('detailmood', compact('showmood', 'songs'));
     }
 
-    public function genre()
+    public function genre(Request $request)
     {
-        $genre = Section::where('post_as', 'GENRE')->get();
+        $search = $request->input('search');
+        $genre = Section::where('post_as', 'GENRE')
+            ->when($search, function ($query, $search) {
+                return $query->where('title', 'like', '%' . $search . '%');
+            })
+            ->get();
+
         return view('genre', compact('genre'));
     }
 

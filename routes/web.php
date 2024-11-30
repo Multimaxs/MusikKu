@@ -5,9 +5,7 @@ use App\Http\Controllers\FrontendSectionController;
 use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\ProfileController;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [FrontendSectionController::class, 'home'])->name('home');
 
 Route::get('/artis', [FrontendSectionController::class, 'artis']);
 Route::get('/artis/{tipe_id}', [FrontendSectionController::class, 'showartis']);
