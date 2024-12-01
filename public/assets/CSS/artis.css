@@ -57,16 +57,6 @@ body{
     gap: 25px; /* Menggunakan satu gap */
     margin-left: 23px; /* Jarak antara logo dan menu */
 }
-    
-.navbar-container .btn {
-    display: flex;
-    padding: 8px 15px;
-    font-family: "Jockey One", sans-serif;
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 .nav-container ul li a {
     text-decoration: none;
@@ -151,7 +141,7 @@ button:hover {
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
-    margin-bottom: 20 px;
+    margin-bottom: 20px;
     height: auto;
 }
 
@@ -171,7 +161,7 @@ button:hover {
 
 /* Nama artis */
 .artist-card .artist-name p {
-    font-size: 14px;
+    font-size: 25px;
     font-weight: bold;
     padding: 10px 0;
     color: #333;
