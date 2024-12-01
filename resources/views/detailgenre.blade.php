@@ -41,20 +41,23 @@
                         <button type="submit">Sukai Lagu</button>
                     </form>
 
-                    <div class="dropdowns">
+                    <div class="ms">
                         <div class="dropdown">
-                            <button class="dropdown-btn">Deskripsi</button>
-                            <div class="dropdown-content">
-                                <p>{{ $song->deskripsi }}</p>
-                            </div>
+                            <button class="dropdown-btn" onclick="toggleContent('deskripsi-{{ $song->id }}')">Deskripsi</button>
                         </div>
                         <div class="dropdown">
-                            <button class="dropdown-btn">Lirik</button>
-                            <div class="dropdown-content">
-                                <p>{{ $song->lirik }}</p>
-                            </div>
+                            <button class="dropdown-btn" onclick="toggleContent('lirik-{{ $song->id }}')">Lirik</button>
+            
                         </div>
                     </div>
+                </div>
+                <div 
+                    id="deskripsi-{{ $song->id }}" class="dropdown-content-hidden">
+                    <p>{{ $song->deskripsi }}</p>
+                </div>
+                <div 
+                    id="lirik-{{ $song->id }}" class="dropdown-content-hidden">
+                    <p>{{ $song->lirik }}</p>
                 </div>
             </div>
         @empty
@@ -145,6 +148,14 @@
             })
             .catch(error => console.error('Error:', error));
         }
+        function toggleContent(contentId) {
+                const content = document.getElementById(contentId);
+                if (content.style.display === "none" || !content.style.display) {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            }
 </script>
     <!-- footer start -->
     <footer>
