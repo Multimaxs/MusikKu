@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Genre</title>
     <link rel="stylesheet" href="{{ asset('assets/CSS/genre.css') }}">
+    <link rel="icon" href="{{ asset('assets/img/icon.png') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
 </head>
 <body>

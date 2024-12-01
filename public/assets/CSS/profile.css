@@ -15,7 +15,6 @@ body {
     line-height: 1.6;
     padding: 20px;
     background: linear-gradient(180deg,#FEF3E2,#FA4032);
-    max-height: 200vh;
 }
 
 /* Header */
@@ -67,7 +66,7 @@ h1 {
 .profile-info {
     margin-bottom: 30px;
     text-align: center;
-    font-size: 16px;
+    font-size: 60px;
 }
 
 .profile-info p {
@@ -134,6 +133,17 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+footer {
+    background-color: #FA4032;
+    text-align: center;
+    padding: 1px;
+    margin-top: 3rem;
+}
+
+footer .credit{
+    font-size: 0.7rem;
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

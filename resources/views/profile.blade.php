@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
     <link rel="stylesheet" href="{{ asset('assets/CSS/profile.css') }}">
+    <link rel="icon" href="{{ asset('assets/img/icon.png') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
 
 </head>
@@ -14,10 +15,14 @@
     <!-- Foto Profil -->
     <div class="profile-picture">
         @if ($pendengar->profile_picture)
-            <img src="{{ Storage::url($pendengar->profile_picture) }}" alt="Foto Profil">
+        <img src="{{ Storage::url($pendengar->profile_picture) }}" alt="Foto Profil">
         @else
-            <img src="{{ asset('assets/images/default-profile.png') }}" alt="Default Foto Profil">
+        <img src="{{ asset('assets/images/default-profile.png') }}" alt="Default Foto Profil">
         @endif
+        <!-- Informasi Pendengar -->
+        <div class="profile-info">
+            <p> {{ $pendengar->name }}</p>
+        </div>
         <form action="{{ route('profile.update.picture') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <label for="profile_picture">Ganti Foto Profil:</label>
@@ -26,11 +31,6 @@
         </form>
     </div>
 
-    <!-- Informasi Pendengar -->
-    <div class="profile-info">
-        <p><strong>Nama:</strong> {{ $pendengar->name }}</p>
-        <p><strong>Email:</strong> {{ $pendengar->email }}</p>
-    </div>
 
     <!-- Daftar Artis yang Disukai -->
     <div class="liked-section">
