@@ -109,7 +109,7 @@ body {
 }
 
 .menu .beranda a {
-   color: #5D4E4E;
+   color: #FBD288;
 }
 
 .menu .artis a {
@@ -151,7 +151,7 @@ body {
 .hero-content p {
     font-size: 2rem; /* Ukuran font paragraf */
     line-height: 1.6;
-    color: white;
+    color: #C7253E;
 }
 
 .hero-image {
