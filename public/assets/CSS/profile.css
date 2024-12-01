@@ -15,7 +15,6 @@ body {
     line-height: 1.6;
     padding: 20px;
     background: linear-gradient(180deg,#FEF3E2,#FA4032);
-    max-height: 200vh;
 }
 
 /* Header */
@@ -66,9 +65,9 @@ h1 {
 
 /* Profile Info */
 .profile-info {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .profile-info p {
@@ -94,6 +93,7 @@ h1 {
     text-align: center;
     border-radius: 5px;
     margin-bottom: 15px;
+    margin-top: 50px;
 }
 
 .artist-item, .song-item {
@@ -142,6 +142,17 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+footer {
+    background-color: #FA4032;
+    text-align: center;
+    padding: 1px;
+    margin-top: 3rem;
+}
+
+footer .credit{
+    font-size: 0.7rem;
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

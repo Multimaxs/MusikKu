@@ -155,7 +155,7 @@ button:hover {
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
-    margin-bottom: 20 px;
+    margin-bottom: 20px;
     height: auto;
     font-family: "Jockey One", sans-serif;
 }
@@ -176,7 +176,7 @@ button:hover {
 
 /* Nama artis */
 .mood-card .mood-name p {
-    font-size: 14px;
+    font-size: 25px;
     font-weight: bold;
     padding: 10px 0;
     color: #333;

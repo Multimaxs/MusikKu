@@ -62,15 +62,6 @@ body {
     margin-left: 20px; /* Jarak antara logo dan menu */
 }
     
-    .nav-container .btn {
-    display: flex;
-    padding: 8px 15px;
-    font-family: "Jockey One", sans-serif;
-        font-size: 0.9rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
 
     .btn-container {
         display: flex;
@@ -91,12 +82,14 @@ body {
     }
 
     button {
-        padding: 0px 10px; /* Mengatur ruang dalam tombol */
-        font-size: 12px;   /* Mengatur ukuran teks dalam tombol */
+        padding: 0px 15px; /* Mengatur ruang dalam tombol */
+        font-size: 15px;   /* Mengatur ukuran teks dalam tombol */
         height: 30px;      /* Mengatur tinggi tombol */
+        border: none;
         border-radius: 5px;
-        margin-left: 1.5rem;
+        margin-left: 1.5rem ; /* Opsional: Membuat sudut membulat */
         align-items: end;
+        font-family: "Jockey One", sans-serif;
     }
 
 .menu a {
@@ -217,7 +210,7 @@ body {
 }
 
 .card .label {
-    font-size: 14px;
+    font-size: 25px;
     font-weight: bold;
     padding: 10px 0;
     color: #333;

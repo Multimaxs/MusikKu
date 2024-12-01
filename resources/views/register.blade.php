@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Akun</title>
     <link rel="stylesheet" href="{{ asset('assets/CSS/akunRegis.css') }}">
+    <link rel="icon" href="{{ asset('assets/img/icon.png') }}">
 </head>
 <body>
     <div class="container">
