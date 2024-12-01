@@ -82,7 +82,7 @@
         <h2>Genre</h2>
         <a href="{{ url('/genre') }}" class="more">Lihat lebih banyak</a>
         <div class="grid">
-            @foreach ($genre->take(4) as $item)
+            @foreach ($genre as $item)
                 <div class="card">
                     <a href="{{ url('/genre/' . $item->tipe_id) }}">
                     <img src="{{ Storage::url($item->thumbnail) }}" alt="{{ $item->title }}">
@@ -98,7 +98,7 @@
         <h2>Mood</h2>
         <a href="{{ url('/mood') }}" class="more">Lihat lebih banyak</a>
         <div class="grid">
-            @foreach ($mood->take(4) as $item)
+            @foreach ($mood as $item)
                 <div class="card">
                     <a href="{{ url('/mood/' . $item->tipe_id) }}">
                     <img src="{{ Storage::url($item->thumbnail) }}" alt="{{ $item->title }}">
