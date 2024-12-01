@@ -5,7 +5,6 @@ body{
     box-sizing: border-box;
     font-family: "Jockey One", sans-serif;
     background: linear-gradient(180deg,#FEF3E2,#FA4032);
-    max-height: 200vh;
 }
 
 .container{
@@ -180,7 +179,7 @@ footer {
     background-color: #FA4032;
     text-align: center;
     padding: 1px;
-    margin-top: 1800px;
+    margin-top: 10rem;
     line-height: 50px;
 }
 
