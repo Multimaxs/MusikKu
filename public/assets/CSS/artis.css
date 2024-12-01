@@ -180,7 +180,8 @@ footer {
     background-color: #FA4032;
     text-align: center;
     padding: 1px;
-    margin-top: 300px;
+    margin-top: 1500px;
+    line-height: 50px;
 }
 
 footer .credit{
