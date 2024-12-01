@@ -12,9 +12,9 @@ class FrontendSectionController extends Controller
 
     public function home()
     {
-    $artis = Section::where('post_as', 'ARTIS')->limit(8)->get();
-    $mood = Section::where('post_as', 'MOOD')->limit(8)->get();
-    $genre = Section::where('post_as', 'GENRE')->limit(8)->get();
+    $artis = Section::where('post_as', 'ARTIS')->limit(5)->get();
+    $mood = Section::where('post_as', 'MOOD')->limit(5)->get();
+    $genre = Section::where('post_as', 'GENRE')->limit(5)->get();
 
     return view('home', compact('artis', 'mood', 'genre'));
     }

@@ -161,24 +161,36 @@ body {
 }
 
 .artis-container{
-    margin-top: 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-top: 15vh;
     align-items: center;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.artis-container h2{
+    font-size: 50px;
 }
 
 .genre-container{
-    margin-top: 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-top: 15vh;
     align-items: center;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.genre-container h2{
+    font-size: 50px;
 }
 
 .mood-container{
-    margin-top: 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    align-items: center; 
+    margin-top: 15vh;
+    align-items: center;
+    margin-left: 30vh;
+    margin-right: 30vh; 
+}
+
+.mood-container h2{
+    font-size: 50px;
 }
 
 .grid {
@@ -186,6 +198,8 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Mengatur kolom responsif */
     gap: 20px; 
     justify-items: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 
 .card {
@@ -221,7 +235,7 @@ body {
     display: block;
     margin-top: 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     color: black;
     text-align: right;
