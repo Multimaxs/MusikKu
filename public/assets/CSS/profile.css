@@ -60,7 +60,8 @@ h1 {
 }
 
 .profile-picture button:hover {
-    background-color: #FEF3E2;
+    background-color: #B03052;
+    color: wheat;
 }
 
 /* Profile Info */
@@ -72,6 +73,13 @@ h1 {
 
 .profile-info p {
     margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.profile-info p strong{
+    color: #B03052;
 }
 
 /* Liked Sections */
@@ -146,3 +154,5 @@ h1 {
         margin: 10px 0 0 0;
     }
 }
+
+
