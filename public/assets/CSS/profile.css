@@ -59,18 +59,26 @@ h1 {
 }
 
 .profile-picture button:hover {
-    background-color: #FEF3E2;
+    background-color: #B03052;
+    color: wheat;
 }
 
 /* Profile Info */
 .profile-info {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 60px;
+    font-size: 20px;
 }
 
 .profile-info p {
     margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.profile-info p strong{
+    color: #B03052;
 }
 
 /* Liked Sections */
@@ -85,6 +93,7 @@ h1 {
     text-align: center;
     border-radius: 5px;
     margin-bottom: 15px;
+    margin-top: 50px;
 }
 
 .artist-item, .song-item {
@@ -156,3 +165,5 @@ footer .credit{
         margin: 10px 0 0 0;
     }
 }
+
+
