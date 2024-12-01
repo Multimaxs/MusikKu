@@ -170,7 +170,7 @@ h1, h2, h3 {
 img {
     display: block;
     margin: 20px auto;
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 10px;
     border: 2px solid #ccc;
 }
@@ -207,6 +207,7 @@ ul li {
     max-width: 800px;
     margin: 10px auto;
     border: 1px solid #ddd;
+    height: auto;
 }
         .song-image {
             width: 100px;
@@ -216,12 +217,16 @@ ul li {
             overflow: hidden;
             margin-right: 15px;
             position: relative;
+            object-fit: cover;
+            display: block;
         }
 
         .song-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
+            margin: 0 0 0 0px;
         }
 
         .song-image button {
@@ -255,7 +260,7 @@ ul li {
     margin-right: 15px;
 }
 
-.somg-header button{
+.song-header button{
     margin-left: 20px;
 }
 
