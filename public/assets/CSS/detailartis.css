@@ -9,7 +9,6 @@ body {
     align-items: center;
     font-family: "Jockey One", sans-serif;
     background: linear-gradient(180deg,#FEF3E2,#FA4032);
-    max-height: 200vh;
 }
 .nav-cotainer .menu{
     display: flex;
@@ -310,6 +309,35 @@ ul li {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.dropdown-content-hidden {
+    align-items: center;
+    display: none;
+    background-color: #FAB12f;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.dropdown-content-hidden p {
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #FA4032;
+    text-align: center;
+    padding: 1rem 42rem;
+    margin-top: 10rem;
+}
+
+footer .credit{
+    font-size: 0.7rem;
+
 }
 
 /* Responsive styling */
