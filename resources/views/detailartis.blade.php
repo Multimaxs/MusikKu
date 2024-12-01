@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Artis</title>
     <link rel="stylesheet" href="{{ asset('assets/CSS/detailartis.css') }}">
-    <link rel="icon" href="{{ asset('assets/img/icon.png') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap">
 
@@ -43,23 +42,20 @@
                         <button type="submit">Sukai Lagu</button>
                     </form>
                     
-                    <div class="ms">
+                    <div class=" ms">
                         <div class="dropdown">
-                            <button class="dropdown-btn" onclick="toggleContent('deskripsi-{{ $song->id }}')">Deskripsi</button>
+                            <button class="dropdown-btn">Deskripsi</button>
+                            <div class="dropdown-content">
+                                <p>{{ $song->deskripsi }}</p>
+                            </div>
                         </div>
                         <div class="dropdown">
-                            <button class="dropdown-btn" onclick="toggleContent('lirik-{{ $song->id }}')">Lirik</button>
-            
+                            <button class="dropdown-btn">Lirik</button>
+                            <div class="dropdown-content">
+                                <p>{{ $song->lirik }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div 
-                    id="deskripsi-{{ $song->id }}" class="dropdown-content-hidden">
-                    <p>{{ $song->deskripsi }}</p>
-                </div>
-                <div 
-                    id="lirik-{{ $song->id }}" class="dropdown-content-hidden">
-                    <p>{{ $song->lirik }}</p>
                 </div>
             </div>
         @empty
@@ -143,15 +139,6 @@
             })
             .catch(error => console.error('Error:', error));
         }
-
-            function toggleContent(contentId) {
-                const content = document.getElementById(contentId);
-                if (content.style.display === "none" || !content.style.display) {
-                    content.style.display = "block";
-                } else {
-                    content.style.display = "none";
-                }
-            }
     </script>
         <!-- footer start -->
         <footer>
