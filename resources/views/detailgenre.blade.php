@@ -34,36 +34,33 @@
                         <button onclick="toggleAudio(this, '{{ Storage::url($song->audio_file) }}')">▶</button>
                     </div>
                     <h3>{{ $song->judul }}</h3>
-
+                    
                     <form action="{{ route('profile.like.song') }}" method="POST">
                     @csrf
                         <input type="hidden" name="song_id" value="{{ $song->id }}">
                         <button type="submit">Sukai Lagu</button>
                     </form>
-
-                    <div class="ms">
-                        <div class="dropdown">
-                            <button class="dropdown-btn" onclick="toggleContent('deskripsi-{{ $song->id }}')">Deskripsi</button>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropdown-btn" onclick="toggleContent('lirik-{{ $song->id }}')">Lirik</button>
-            
-                        </div>
-                    </div>
                 </div>
-                <div 
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleContent('deskripsi-{{ $song->id }}')">Deskripsi</button>
+                    <div 
                     id="deskripsi-{{ $song->id }}" class="dropdown-content-hidden">
                     <p>{{ $song->deskripsi }}</p>
+                    </div>
                 </div>
-                <div 
-                    id="lirik-{{ $song->id }}" class="dropdown-content-hidden">
-                    <p>{{ $song->lirik }}</p>
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleContent('lirik-{{ $song->id }}')">Lirik</button>
+                    <div 
+                        id="lirik-{{ $song->id }}" class="dropdown-content-hidden">
+                        <p>{{ $song->lirik }}</p>
+                    </div>
                 </div>
             </div>
         @empty
             <p>Tidak ada lagu untuk mood ini.</p>
         @endforelse
     </div>
+
 
 <script>
     let currentAudio = null; 
@@ -148,10 +145,13 @@
             })
             .catch(error => console.error('Error:', error));
         }
+
         function toggleContent(contentId) {
                 const content = document.getElementById(contentId);
-                if (content.style.display === "none" || !content.style.display) {
-                    content.style.display = "block";
+
+                
+                if (content.style.display === "none") {
+                    content.style.display = "flex";
                 } else {
                     content.style.display = "none";
                 }
