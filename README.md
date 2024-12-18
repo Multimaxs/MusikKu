@@ -1,9 +1,28 @@
-HOW TO RUN :
+# Music Catalogue Website with Music Player Feature
+
+A web application built using Laravel 11 and powered by Filament for advanced admin panel management.
+
+---
+
+## 🚀 Features
+
+- Modern PHP (8.2+) support
+- Filament admin panel for effortless backend management
+- Built-in authentication and user management
+- Modular and scalable architecture
+- Easy local setup for development
+- Listening your favorite song
+
+---
+
+## 🛠 Installation
+
+Follow these steps to set up the project on your local environment:
 
 Requirement : 
-PHP: At least version 8.2 or newer (required for Laravel 11).
-Composer: For dependency management.
-Web Server and Database : XAMPP At least version 8.2 or newer 8.2
+1. PHP: At least version 8.2 or newer (required for Laravel 11).
+2. Composer: For dependency management.
+3. Web Server and Database : XAMPP At least version 8.2 or newer 8.2
 
 Run on localhost :
 1. Clone this repository
